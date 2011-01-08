@@ -1,0 +1,8 @@
+set solib-search-path /home/uday/Tools/video-trimmer/obj/local/armeabi
+directory /home/uday/mount/android-ndk-r4b/build/platforms/android-8/arch-arm/usr/include
+directory /home/uday/Tools/video-trimmer/jni
+directory /home/uday/Tools/video-trimmer/jni
+directory /home/uday/Tools/video-trimmer/jni
+directory /home/uday/Tools/video-trimmer/jni
+directory /home/uday/Tools/video-trimmer/jni
+directory /home/uday/Tools/video-trimmer/jni

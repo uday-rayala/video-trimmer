@@ -1,0 +1,3512 @@
+# ./configure --target-os=linux --arch=arm --enable-version3 --enable-gpl --enable-nonfree --disable-stripping --disable-ffmpeg --disable-ffplay --disable-ffserver --disable-ffprobe --disable-encoders --disable-muxers --disable-devices --disable-protocols --enable-protocol=file --enable-avfilter --disable-network --disable-mpegaudio-hp --disable-avdevice --enable-cross-compile --cc=/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc --cross-prefix=/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi- --nm=/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-nm --extra-cflags='-fPIC -DANDROID' --disable-asm --enable-neon --enable-armv5te --extra-ldflags='-Wl,-T,/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/arm-eabi/lib/ldscripts/armelf.x -Wl,-rpath-link=/home/uday/mount/android-ndk-r4b/build/platforms/android-8/arch-arm/usr/lib -L/home/uday/mount/android-ndk-r4b/build/platforms/android-8/arch-arm/usr/lib -nostdlib /home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/lib/gcc/arm-eabi/4.4.0/crtbegin.o /home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/lib/gcc/arm-eabi/4.4.0/crtend.o -lc -lm -ldl'
+ARCH_EXT_LIST='
+    altivec
+    amd3dnow
+    amd3dnowext
+    armv5te
+    armv6
+    armv6t2
+    armvfp
+    iwmmxt
+    mmi
+    mmx
+    mmx2
+    neon
+    ppc4xx
+    sse
+    ssse3
+    vis
+'
+ARCH_LIST='
+    alpha
+    arm
+    avr32
+    avr32_ap
+    avr32_uc
+    bfin
+    ia64
+    m68k
+    mips
+    mips64
+    parisc
+    ppc
+    ppc64
+    s390
+    sh4
+    sparc
+    sparc64
+    tomi
+    x86
+    x86_32
+    x86_64
+'
+BSF_LIST='aac_adtstoasc_bsf
+dump_extradata_bsf
+h264_mp4toannexb_bsf
+imx_dump_header_bsf
+mjpega_dump_header_bsf
+mp3_header_compress_bsf
+mp3_header_decompress_bsf
+mov2textsub_bsf
+noise_bsf
+remove_extradata_bsf
+text2movsub_bsf'
+CC_O='-o $@'
+CMDLINE_APPEND='
+    extra_cflags
+'
+CMDLINE_SELECT='
+    
+    altivec
+    amd3dnow
+    amd3dnowext
+    armv5te
+    armv6
+    armv6t2
+    armvfp
+    iwmmxt
+    mmi
+    mmx
+    mmx2
+    neon
+    ppc4xx
+    sse
+    ssse3
+    vis
+
+    
+    
+    bsfs
+    decoders
+    demuxers
+    encoders
+    filters
+    hwaccels
+    indevs
+    muxers
+    outdevs
+    parsers
+    protocols
+
+    aandct
+    avcodec
+    avdevice
+    avfilter
+    avfilter_lavf
+    avformat
+    avisynth
+    beos_netserver
+    bzlib
+    dct
+    doc
+    dwt
+    dxva2
+    fastdiv
+    ffmpeg
+    ffplay
+    ffprobe
+    ffserver
+    fft
+    golomb
+    gpl
+    gprof
+    gray
+    h264dsp
+    hardcoded_tables
+    libdc1394
+    libdirac
+    libfaac
+    libfaad
+    libfaadbin
+    libgsm
+    libmp3lame
+    libnut
+    libopencore_amrnb
+    libopencore_amrwb
+    libopenjpeg
+    librtmp
+    libschroedinger
+    libspeex
+    libtheora
+    libvorbis
+    libvpx
+    libx264
+    libxvid
+    lpc
+    lsp
+    mdct
+    memalign_hack
+    mlib
+    mpegaudio_hp
+    network
+    nonfree
+    pic
+    postproc
+    powerpc_perf
+    rdft
+    runtime_cpudetect
+    shared
+    small
+    sram
+    static
+    swscale
+    swscale_alpha
+    vaapi
+    vdpau
+    version3
+    x11grab
+    zlib
+
+    
+    beosthreads
+    os2threads
+    pthreads
+    w32threads
+
+    asm
+    cross_compile
+    debug
+    extra_warnings
+    logging
+    optimizations
+    stripping
+    yasm
+'
+CMDLINE_SET='
+    
+    bindir
+    datadir
+    incdir
+    libdir
+    mandir
+    prefix
+    shlibdir
+
+    ar
+    arch
+    as
+    build_suffix
+    cc
+    cpu
+    cross_prefix
+    dep_cc
+    extra_version
+    host_cc
+    host_cflags
+    host_ldflags
+    host_libs
+    host_os
+    ld
+    logfile
+    malloc_prefix
+    nm
+    samples
+    source_path
+    strip
+    sysinclude
+    sysroot
+    target_exec
+    target_os
+    target_path
+'
+COLORTERM='gnome-terminal'
+COMPONENT_LIST='
+    bsfs
+    decoders
+    demuxers
+    encoders
+    filters
+    hwaccels
+    indevs
+    muxers
+    outdevs
+    parsers
+    protocols
+'
+CONFIG_EXTRA='
+    avutil
+    gplv3
+    lgplv3
+'
+CONFIG_LIST='
+    
+    bsfs
+    decoders
+    demuxers
+    encoders
+    filters
+    hwaccels
+    indevs
+    muxers
+    outdevs
+    parsers
+    protocols
+
+    aandct
+    avcodec
+    avdevice
+    avfilter
+    avfilter_lavf
+    avformat
+    avisynth
+    beos_netserver
+    bzlib
+    dct
+    doc
+    dwt
+    dxva2
+    fastdiv
+    ffmpeg
+    ffplay
+    ffprobe
+    ffserver
+    fft
+    golomb
+    gpl
+    gprof
+    gray
+    h264dsp
+    hardcoded_tables
+    libdc1394
+    libdirac
+    libfaac
+    libfaad
+    libfaadbin
+    libgsm
+    libmp3lame
+    libnut
+    libopencore_amrnb
+    libopencore_amrwb
+    libopenjpeg
+    librtmp
+    libschroedinger
+    libspeex
+    libtheora
+    libvorbis
+    libvpx
+    libx264
+    libxvid
+    lpc
+    lsp
+    mdct
+    memalign_hack
+    mlib
+    mpegaudio_hp
+    network
+    nonfree
+    pic
+    postproc
+    powerpc_perf
+    rdft
+    runtime_cpudetect
+    shared
+    small
+    sram
+    static
+    swscale
+    swscale_alpha
+    vaapi
+    vdpau
+    version3
+    x11grab
+    zlib
+'
+DBUS_SESSION_BUS_ADDRESS='unix:abstract=/tmp/dbus-z1SnUhRTpA,guid=b2cb231e6b094630b555df334d146efc'
+DECODER_LIST='aasc_decoder
+amv_decoder
+anm_decoder
+asv1_decoder
+asv2_decoder
+aura_decoder
+aura2_decoder
+avs_decoder
+bethsoftvid_decoder
+bfi_decoder
+bink_decoder
+bmp_decoder
+c93_decoder
+cavs_decoder
+cdgraphics_decoder
+cinepak_decoder
+cljr_decoder
+cscd_decoder
+cyuv_decoder
+dnxhd_decoder
+dpx_decoder
+dsicinvideo_decoder
+dvvideo_decoder
+dxa_decoder
+eacmv_decoder
+eamad_decoder
+eatgq_decoder
+eatgv_decoder
+eatqi_decoder
+eightbps_decoder
+eightsvx_exp_decoder
+eightsvx_fib_decoder
+escape124_decoder
+ffv1_decoder
+ffvhuff_decoder
+flashsv_decoder
+flic_decoder
+flv_decoder
+fourxm_decoder
+fraps_decoder
+frwu_decoder
+gif_decoder
+h261_decoder
+h263_decoder
+h263i_decoder
+h264_decoder
+h264_vdpau_decoder
+huffyuv_decoder
+idcin_decoder
+iff_byterun1_decoder
+iff_ilbm_decoder
+indeo2_decoder
+indeo3_decoder
+indeo5_decoder
+interplay_video_decoder
+jpegls_decoder
+kgv1_decoder
+kmvc_decoder
+loco_decoder
+mdec_decoder
+mimic_decoder
+mjpeg_decoder
+mjpegb_decoder
+mmvideo_decoder
+motionpixels_decoder
+mpeg_xvmc_decoder
+mpeg1video_decoder
+mpeg2video_decoder
+mpeg4_decoder
+mpeg4_vdpau_decoder
+mpegvideo_decoder
+mpeg_vdpau_decoder
+mpeg1_vdpau_decoder
+msmpeg4v1_decoder
+msmpeg4v2_decoder
+msmpeg4v3_decoder
+msrle_decoder
+msvideo1_decoder
+mszh_decoder
+nuv_decoder
+pam_decoder
+pbm_decoder
+pcx_decoder
+pgm_decoder
+pgmyuv_decoder
+png_decoder
+ppm_decoder
+ptx_decoder
+qdraw_decoder
+qpeg_decoder
+qtrle_decoder
+r210_decoder
+rawvideo_decoder
+rl2_decoder
+roq_decoder
+rpza_decoder
+rv10_decoder
+rv20_decoder
+rv30_decoder
+rv40_decoder
+sgi_decoder
+smacker_decoder
+smc_decoder
+snow_decoder
+sp5x_decoder
+sunrast_decoder
+svq1_decoder
+svq3_decoder
+targa_decoder
+theora_decoder
+thp_decoder
+tiertexseqvideo_decoder
+tiff_decoder
+tmv_decoder
+truemotion1_decoder
+truemotion2_decoder
+tscc_decoder
+txd_decoder
+ulti_decoder
+v210_decoder
+v210x_decoder
+vb_decoder
+vc1_decoder
+vc1_vdpau_decoder
+vcr1_decoder
+vmdvideo_decoder
+vmnc_decoder
+vp3_decoder
+vp5_decoder
+vp6_decoder
+vp6a_decoder
+vp6f_decoder
+vqa_decoder
+wmv1_decoder
+wmv2_decoder
+wmv3_decoder
+wmv3_vdpau_decoder
+wnv1_decoder
+xan_wc3_decoder
+xl_decoder
+yop_decoder
+zlib_decoder
+zmbv_decoder
+aac_decoder
+ac3_decoder
+alac_decoder
+als_decoder
+amrnb_decoder
+ape_decoder
+atrac1_decoder
+atrac3_decoder
+binkaudio_dct_decoder
+binkaudio_rdft_decoder
+cook_decoder
+dca_decoder
+dsicinaudio_decoder
+eac3_decoder
+flac_decoder
+imc_decoder
+mace3_decoder
+mace6_decoder
+mlp_decoder
+mp1_decoder
+mp2_decoder
+mp3_decoder
+mp3adu_decoder
+mp3on4_decoder
+mpc7_decoder
+mpc8_decoder
+nellymoser_decoder
+qcelp_decoder
+qdm2_decoder
+ra_144_decoder
+ra_288_decoder
+shorten_decoder
+sipr_decoder
+smackaud_decoder
+sonic_decoder
+truehd_decoder
+truespeech_decoder
+tta_decoder
+twinvq_decoder
+vmdaudio_decoder
+vorbis_decoder
+wavpack_decoder
+wmapro_decoder
+wmav1_decoder
+wmav2_decoder
+wmavoice_decoder
+ws_snd1_decoder
+pcm_alaw_decoder
+pcm_bluray_decoder
+pcm_dvd_decoder
+pcm_f32be_decoder
+pcm_f32le_decoder
+pcm_f64be_decoder
+pcm_f64le_decoder
+pcm_mulaw_decoder
+pcm_s8_decoder
+pcm_s16be_decoder
+pcm_s16le_decoder
+pcm_s16le_planar_decoder
+pcm_s24be_decoder
+pcm_s24daud_decoder
+pcm_s24le_decoder
+pcm_s32be_decoder
+pcm_s32le_decoder
+pcm_u8_decoder
+pcm_u16be_decoder
+pcm_u16le_decoder
+pcm_u24be_decoder
+pcm_u24le_decoder
+pcm_u32be_decoder
+pcm_u32le_decoder
+pcm_zork_decoder
+interplay_dpcm_decoder
+roq_dpcm_decoder
+sol_dpcm_decoder
+xan_dpcm_decoder
+adpcm_4xm_decoder
+adpcm_adx_decoder
+adpcm_ct_decoder
+adpcm_ea_decoder
+adpcm_ea_maxis_xa_decoder
+adpcm_ea_r1_decoder
+adpcm_ea_r2_decoder
+adpcm_ea_r3_decoder
+adpcm_ea_xas_decoder
+adpcm_g726_decoder
+adpcm_ima_amv_decoder
+adpcm_ima_dk3_decoder
+adpcm_ima_dk4_decoder
+adpcm_ima_ea_eacs_decoder
+adpcm_ima_ea_sead_decoder
+adpcm_ima_iss_decoder
+adpcm_ima_qt_decoder
+adpcm_ima_smjpeg_decoder
+adpcm_ima_wav_decoder
+adpcm_ima_ws_decoder
+adpcm_ms_decoder
+adpcm_sbpro_2_decoder
+adpcm_sbpro_3_decoder
+adpcm_sbpro_4_decoder
+adpcm_swf_decoder
+adpcm_thp_decoder
+adpcm_xa_decoder
+adpcm_yamaha_decoder
+dvbsub_decoder
+dvdsub_decoder
+pgssub_decoder
+xsub_decoder
+libdirac_decoder
+libfaad_decoder
+libgsm_decoder
+libgsm_ms_decoder
+libopencore_amrnb_decoder
+libopencore_amrwb_decoder
+libopenjpeg_decoder
+libschroedinger_decoder
+libspeex_decoder
+libvpx_decoder'
+DEFAULTS_PATH='/usr/share/gconf/gnome.default.path'
+DEMUXER_LIST='aac_demuxer
+ac3_demuxer
+aea_demuxer
+aiff_demuxer
+amr_demuxer
+anm_demuxer
+apc_demuxer
+ape_demuxer
+asf_demuxer
+ass_demuxer
+au_demuxer
+avi_demuxer
+avisynth_demuxer
+avs_demuxer
+bethsoftvid_demuxer
+bfi_demuxer
+bink_demuxer
+c93_demuxer
+caf_demuxer
+cavsvideo_demuxer
+cdg_demuxer
+daud_demuxer
+dirac_demuxer
+dnxhd_demuxer
+dsicin_demuxer
+dts_demuxer
+dv_demuxer
+dxa_demuxer
+ea_demuxer
+ea_cdata_demuxer
+eac3_demuxer
+ffm_demuxer
+filmstrip_demuxer
+flac_demuxer
+flic_demuxer
+flv_demuxer
+fourxm_demuxer
+gsm_demuxer
+gxf_demuxer
+h261_demuxer
+h263_demuxer
+h264_demuxer
+idcin_demuxer
+iff_demuxer
+image2_demuxer
+image2pipe_demuxer
+ingenient_demuxer
+ipmovie_demuxer
+iss_demuxer
+iv8_demuxer
+lmlm4_demuxer
+m4v_demuxer
+matroska_demuxer
+mjpeg_demuxer
+mlp_demuxer
+mm_demuxer
+mmf_demuxer
+mov_demuxer
+mp3_demuxer
+mpc_demuxer
+mpc8_demuxer
+mpegps_demuxer
+mpegts_demuxer
+mpegtsraw_demuxer
+mpegvideo_demuxer
+msnwc_tcp_demuxer
+mtv_demuxer
+mvi_demuxer
+mxf_demuxer
+nc_demuxer
+nsv_demuxer
+nut_demuxer
+nuv_demuxer
+ogg_demuxer
+oma_demuxer
+pcm_alaw_demuxer
+pcm_mulaw_demuxer
+pcm_f64be_demuxer
+pcm_f64le_demuxer
+pcm_f32be_demuxer
+pcm_f32le_demuxer
+pcm_s32be_demuxer
+pcm_s32le_demuxer
+pcm_s24be_demuxer
+pcm_s24le_demuxer
+pcm_s16be_demuxer
+pcm_s16le_demuxer
+pcm_s8_demuxer
+pcm_u32be_demuxer
+pcm_u32le_demuxer
+pcm_u24be_demuxer
+pcm_u24le_demuxer
+pcm_u16be_demuxer
+pcm_u16le_demuxer
+pcm_u8_demuxer
+pva_demuxer
+qcp_demuxer
+r3d_demuxer
+rawvideo_demuxer
+rl2_demuxer
+rm_demuxer
+roq_demuxer
+rpl_demuxer
+rtsp_demuxer
+sdp_demuxer
+segafilm_demuxer
+shorten_demuxer
+siff_demuxer
+smacker_demuxer
+sol_demuxer
+sox_demuxer
+str_demuxer
+swf_demuxer
+thp_demuxer
+tiertexseq_demuxer
+tmv_demuxer
+truehd_demuxer
+tta_demuxer
+txd_demuxer
+vc1_demuxer
+vc1t_demuxer
+vmd_demuxer
+voc_demuxer
+vqf_demuxer
+w64_demuxer
+wav_demuxer
+wc3_demuxer
+wsaud_demuxer
+wsvqa_demuxer
+wv_demuxer
+xa_demuxer
+yop_demuxer
+yuv4mpegpipe_demuxer
+libnut_demuxer'
+DEPEND_CMD='$(DEPCC) $(DEPFLAGS) $< | sed -e "/^\#.*/d" -e "s,^[[:space:]]*$(*F)\\.o,$(@D)/$(*F).o," > $(@:.o=.d)'
+DEPFLAGS='$(CPPFLAGS) $(CFLAGS) -MM'
+DESKTOP_SESSION='gnome'
+DISPLAY=':0.0'
+E1='0'
+E2='2'
+ENCODER_LIST='asv1_encoder
+asv2_encoder
+bmp_encoder
+dnxhd_encoder
+dvvideo_encoder
+ffv1_encoder
+ffvhuff_encoder
+flashsv_encoder
+flv_encoder
+gif_encoder
+h261_encoder
+h263_encoder
+h263p_encoder
+huffyuv_encoder
+jpegls_encoder
+ljpeg_encoder
+mjpeg_encoder
+mpeg1video_encoder
+mpeg2video_encoder
+mpeg4_encoder
+msmpeg4v1_encoder
+msmpeg4v2_encoder
+msmpeg4v3_encoder
+pam_encoder
+pbm_encoder
+pcx_encoder
+pgm_encoder
+pgmyuv_encoder
+png_encoder
+ppm_encoder
+qtrle_encoder
+rawvideo_encoder
+roq_encoder
+rv10_encoder
+rv20_encoder
+sgi_encoder
+snow_encoder
+svq1_encoder
+targa_encoder
+tiff_encoder
+v210_encoder
+wmv1_encoder
+wmv2_encoder
+zlib_encoder
+zmbv_encoder
+aac_encoder
+ac3_encoder
+alac_encoder
+flac_encoder
+mp2_encoder
+nellymoser_encoder
+sonic_encoder
+sonic_ls_encoder
+wmav1_encoder
+wmav2_encoder
+pcm_alaw_encoder
+pcm_f32be_encoder
+pcm_f32le_encoder
+pcm_f64be_encoder
+pcm_f64le_encoder
+pcm_mulaw_encoder
+pcm_s8_encoder
+pcm_s16be_encoder
+pcm_s16le_encoder
+pcm_s24be_encoder
+pcm_s24daud_encoder
+pcm_s24le_encoder
+pcm_s32be_encoder
+pcm_s32le_encoder
+pcm_u8_encoder
+pcm_u16be_encoder
+pcm_u16le_encoder
+pcm_u24be_encoder
+pcm_u24le_encoder
+pcm_u32be_encoder
+pcm_u32le_encoder
+pcm_zork_encoder
+roq_dpcm_encoder
+adpcm_adx_encoder
+adpcm_g726_encoder
+adpcm_ima_qt_encoder
+adpcm_ima_wav_encoder
+adpcm_ms_encoder
+adpcm_swf_encoder
+adpcm_yamaha_encoder
+dvbsub_encoder
+dvdsub_encoder
+xsub_encoder
+libdirac_encoder
+libfaac_encoder
+libgsm_encoder
+libgsm_ms_encoder
+libmp3lame_encoder
+libopencore_amrnb_encoder
+libschroedinger_encoder
+libtheora_encoder
+libvorbis_encoder
+libvpx_encoder
+libx264_encoder
+libxvid_encoder'
+FFMPEG_CONFIGURATION='--target-os=linux --arch=arm --enable-version3 --enable-gpl --enable-nonfree --disable-stripping --disable-ffmpeg --disable-ffplay --disable-ffserver --disable-ffprobe --disable-encoders --disable-muxers --disable-devices --disable-protocols --enable-protocol=file --enable-avfilter --disable-network --disable-mpegaudio-hp --disable-avdevice --enable-cross-compile --cc=/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc --cross-prefix=/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi- --nm=/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-nm --extra-cflags='"'"'-fPIC -DANDROID'"'"' --disable-asm --enable-neon --enable-armv5te --extra-ldflags='"'"'-Wl,-T,/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/arm-eabi/lib/ldscripts/armelf.x -Wl,-rpath-link=/home/uday/mount/android-ndk-r4b/build/platforms/android-8/arch-arm/usr/lib -L/home/uday/mount/android-ndk-r4b/build/platforms/android-8/arch-arm/usr/lib -nostdlib /home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/lib/gcc/arm-eabi/4.4.0/crtbegin.o /home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/lib/gcc/arm-eabi/4.4.0/crtend.o -lc -lm -ldl'"'"
+FFSERVERLDFLAGS='-Wl,-E'
+FILTER_LIST=''
+FULLNAME='$(NAME)$(BUILDSUF)'
+GDMSESSION='gnome'
+GDM_KEYBOARD_LAYOUT='us'
+GDM_LANG='en_IN'
+GNOME_DESKTOP_SESSION_ID='this-is-deprecated'
+GNOME_KEYRING_CONTROL='/tmp/keyring-j8J2tA'
+GNOME_KEYRING_PID='1187'
+GTK_MODULES='canberra-gtk-module'
+HAVE_LIST='
+    
+    altivec
+    amd3dnow
+    amd3dnowext
+    armv5te
+    armv6
+    armv6t2
+    armvfp
+    iwmmxt
+    mmi
+    mmx
+    mmx2
+    neon
+    ppc4xx
+    sse
+    ssse3
+    vis
+
+    
+    bigendian
+
+    
+    beosthreads
+    os2threads
+    pthreads
+    w32threads
+
+    alsa_asoundlib_h
+    altivec_h
+    arpa_inet_h
+    attribute_may_alias
+    attribute_packed
+    bswap
+    closesocket
+    cmov
+    conio_h
+    dcbzl
+    dev_bktr_ioctl_bt848_h
+    dev_bktr_ioctl_meteor_h
+    dev_ic_bt8xx_h
+    dev_video_meteor_ioctl_meteor_h
+    dev_video_bktr_ioctl_bt848_h
+    dlfcn_h
+    dlopen
+    dos_paths
+    ebp_available
+    ebx_available
+    exp2
+    exp2f
+    fast_64bit
+    fast_clz
+    fast_cmov
+    fast_unaligned
+    fork
+    getaddrinfo
+    gethrtime
+    GetProcessMemoryInfo
+    GetProcessTimes
+    getrusage
+    struct_rusage_ru_maxrss
+    inet_aton
+    inline_asm
+    isatty
+    ldbrx
+    libdc1394_1
+    libdc1394_2
+    llrint
+    llrintf
+    local_aligned_16
+    local_aligned_8
+    log2
+    log2f
+    loongson
+    lrint
+    lrintf
+    lzo1x_999_compress
+    machine_ioctl_bt848_h
+    machine_ioctl_meteor_h
+    malloc_h
+    memalign
+    mkstemp
+    pld
+    posix_memalign
+    round
+    roundf
+    sdl
+    sdl_video_size
+    setmode
+    socklen_t
+    soundcard_h
+    poll_h
+    setrlimit
+    strerror_r
+    struct_addrinfo
+    struct_ipv6_mreq
+    struct_sockaddr_in6
+    struct_sockaddr_sa_len
+    struct_sockaddr_storage
+    symver
+    symver_gnu_asm
+    symver_asm_label
+    sys_mman_h
+    sys_resource_h
+    sys_select_h
+    sys_soundcard_h
+    sys_videoio_h
+    ten_operands
+    termios_h
+    threads
+    truncf
+    vfp_args
+    VirtualAlloc
+    winsock2_h
+    xform_asm
+    yasm
+'
+HAVE_LIST_PUB='
+    bigendian
+'
+HOME='/home/uday'
+HWACCEL_LIST='h263_vaapi_hwaccel
+h264_dxva2_hwaccel
+h264_vaapi_hwaccel
+mpeg2_vaapi_hwaccel
+mpeg4_vaapi_hwaccel
+vc1_dxva2_hwaccel
+vc1_vaapi_hwaccel
+wmv3_dxva2_hwaccel
+wmv3_vaapi_hwaccel'
+IFS=' 	
+'
+INDEV_LIST=''
+LANG='en_IN'
+LC_ALL='C'
+LDFLAGS=' -Wl,-T,/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/arm-eabi/lib/ldscripts/armelf.x -Wl,-rpath-link=/home/uday/mount/android-ndk-r4b/build/platforms/android-8/arch-arm/usr/lib -L/home/uday/mount/android-ndk-r4b/build/platforms/android-8/arch-arm/usr/lib -nostdlib /home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/lib/gcc/arm-eabi/4.4.0/crtbegin.o /home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/lib/gcc/arm-eabi/4.4.0/crtend.o -lc -lm -ldl'
+LESSCLOSE='/usr/bin/lesspipe %s %s'
+LESSOPEN='| /usr/bin/lesspipe %s'
+LIBNAME='$(LIBPREF)$(FULLNAME)$(LIBSUF)'
+LIBPREF='lib'
+LIBSUF='.a'
+LIB_INSTALL_EXTRA_CMD='$$(RANLIB) "$(LIBDIR)/$(LIBNAME)"'
+LOGNAME='uday'
+LS_COLORS='rs=0:di=01;34:ln=01;36:hl=44;37:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:'
+MANDATORY_PATH='/usr/share/gconf/gnome.mandatory.path'
+MUXER_LIST='ac3_muxer
+adts_muxer
+aiff_muxer
+amr_muxer
+asf_muxer
+ass_muxer
+asf_stream_muxer
+au_muxer
+avi_muxer
+avm2_muxer
+crc_muxer
+daud_muxer
+dirac_muxer
+dnxhd_muxer
+dts_muxer
+dv_muxer
+eac3_muxer
+ffm_muxer
+filmstrip_muxer
+flac_muxer
+flv_muxer
+framecrc_muxer
+gif_muxer
+gxf_muxer
+h261_muxer
+h263_muxer
+h264_muxer
+image2_muxer
+image2pipe_muxer
+ipod_muxer
+m4v_muxer
+matroska_muxer
+matroska_audio_muxer
+mjpeg_muxer
+mlp_muxer
+mmf_muxer
+mov_muxer
+mp2_muxer
+mp3_muxer
+mp4_muxer
+mpeg1system_muxer
+mpeg1vcd_muxer
+mpeg1video_muxer
+mpeg2dvd_muxer
+mpeg2svcd_muxer
+mpeg2video_muxer
+mpeg2vob_muxer
+mpegts_muxer
+mpjpeg_muxer
+mxf_muxer
+mxf_d10_muxer
+null_muxer
+nut_muxer
+ogg_muxer
+pcm_alaw_muxer
+pcm_mulaw_muxer
+pcm_f64be_muxer
+pcm_f64le_muxer
+pcm_f32be_muxer
+pcm_f32le_muxer
+pcm_s32be_muxer
+pcm_s32le_muxer
+pcm_s24be_muxer
+pcm_s24le_muxer
+pcm_s16be_muxer
+pcm_s16le_muxer
+pcm_s8_muxer
+pcm_u32be_muxer
+pcm_u32le_muxer
+pcm_u24be_muxer
+pcm_u24le_muxer
+pcm_u16be_muxer
+pcm_u16le_muxer
+pcm_u8_muxer
+psp_muxer
+rawvideo_muxer
+rm_muxer
+roq_muxer
+rtp_muxer
+rtsp_muxer
+sox_muxer
+spdif_muxer
+swf_muxer
+tg2_muxer
+tgp_muxer
+truehd_muxer
+vc1t_muxer
+voc_muxer
+wav_muxer
+webm_muxer
+yuv4mpegpipe_muxer
+libnut_muxer'
+OPTIND='1'
+ORBIT_SOCKETDIR='/tmp/orbit-uday'
+OUTDEV_LIST=''
+PARSER_LIST='aac_parser
+ac3_parser
+cavsvideo_parser
+dca_parser
+dirac_parser
+dnxhd_parser
+dvbsub_parser
+dvdsub_parser
+h261_parser
+h263_parser
+h264_parser
+mjpeg_parser
+mlp_parser
+mpeg4video_parser
+mpegaudio_parser
+mpegvideo_parser
+pnm_parser
+vc1_parser
+vp3_parser'
+PATH='/home/uday/Tools/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games'
+PATHS_LIST='
+    bindir
+    datadir
+    incdir
+    libdir
+    mandir
+    prefix
+    shlibdir
+'
+PPID='15782'
+PROTOCOL_LIST='file_protocol
+gopher_protocol
+http_protocol
+pipe_protocol
+rtmp_protocol
+rtmpt_protocol
+rtmpe_protocol
+rtmpte_protocol
+rtmps_protocol
+rtp_protocol
+tcp_protocol
+udp_protocol
+concat_protocol'
+PS1='$ '
+PS2='> '
+PS4='+ '
+PWD='/home/uday/mount/workspace/ffmpeg-pics/jni'
+SESSION_MANAGER='local/uday-laptop:@/tmp/.ICE-unix/1205,unix/uday-laptop:/tmp/.ICE-unix/1205'
+SHELL='/bin/bash'
+SHFLAGS='-shared -Wl,-soname,$$(@F)'
+SHLVL='2'
+SLIBNAME='$(SLIBPREF)$(FULLNAME)$(SLIBSUF)'
+SLIBNAME_WITH_MAJOR='$(SLIBNAME).$(LIBMAJOR)'
+SLIBNAME_WITH_VERSION='$(SLIBNAME).$(LIBVERSION)'
+SLIBPREF='lib'
+SLIBSUF='.so'
+SPEECHD_PORT='7560'
+SSH_AGENT_PID='1278'
+SSH_AUTH_SOCK='/tmp/keyring-j8J2tA/ssh'
+TERM='xterm'
+THREADS_LIST='
+    beosthreads
+    os2threads
+    pthreads
+    w32threads
+'
+USER='uday'
+USERNAME='uday'
+WINDOWID='65011716'
+XAUTHORITY='/var/run/gdm/auth-for-uday-Xjx1sw/database'
+XDG_CONFIG_DIRS='/etc/xdg/xdg-gnome:/etc/xdg'
+XDG_DATA_DIRS='/usr/share/gnome:/usr/local/share/:/usr/share/'
+XDG_SESSION_COOKIE='5de08cd297d9b236c7d122314c7f306e-1293184764.516424-278530614'
+_='./configure'
+aac_adtstoasc_bsf='yes'
+aac_adtstoasc_bsf_select='aac_parser'
+aac_decoder='yes'
+aac_decoder_select='mdct rdft aac_parser'
+aac_demuxer='yes'
+aac_encoder_select='mdct'
+aac_parser='yes'
+aasc_decoder='yes'
+ac3_decoder='yes'
+ac3_decoder_select='mdct ac3_parser'
+ac3_demuxer='yes'
+ac3_demuxer_deps='ac3_parser'
+ac3_parser='yes'
+action='enable'
+adpcm_4xm_decoder='yes'
+adpcm_adx_decoder='yes'
+adpcm_ct_decoder='yes'
+adpcm_ea_decoder='yes'
+adpcm_ea_maxis_xa_decoder='yes'
+adpcm_ea_r1_decoder='yes'
+adpcm_ea_r2_decoder='yes'
+adpcm_ea_r3_decoder='yes'
+adpcm_ea_xas_decoder='yes'
+adpcm_g726_decoder='yes'
+adpcm_ima_amv_decoder='yes'
+adpcm_ima_dk3_decoder='yes'
+adpcm_ima_dk4_decoder='yes'
+adpcm_ima_ea_eacs_decoder='yes'
+adpcm_ima_ea_sead_decoder='yes'
+adpcm_ima_iss_decoder='yes'
+adpcm_ima_qt_decoder='yes'
+adpcm_ima_smjpeg_decoder='yes'
+adpcm_ima_wav_decoder='yes'
+adpcm_ima_ws_decoder='yes'
+adpcm_ms_decoder='yes'
+adpcm_sbpro_2_decoder='yes'
+adpcm_sbpro_3_decoder='yes'
+adpcm_sbpro_4_decoder='yes'
+adpcm_swf_decoder='yes'
+adpcm_thp_decoder='yes'
+adpcm_xa_decoder='yes'
+adpcm_yamaha_decoder='yes'
+aea_demuxer='yes'
+aiff_demuxer='yes'
+alac_decoder='yes'
+alac_encoder_select='lpc'
+als_decoder='yes'
+alsa_indev_deps='alsa_asoundlib_h snd_pcm_htimestamp'
+alsa_indev_extralibs='-lasound'
+alsa_outdev_deps='alsa_asoundlib_h'
+alsa_outdev_extralibs='-lasound'
+altivec='yes'
+altivec_deps='ppc'
+amd3dnow='yes'
+amd3dnow_deps='mmx'
+amd3dnowext='yes'
+amd3dnowext_deps='amd3dnow'
+amr_demuxer='yes'
+amrnb_decoder='yes'
+amrnb_decoder_select='lsp'
+amv_decoder='yes'
+anm_decoder='yes'
+anm_demuxer='yes'
+apc_demuxer='yes'
+ape_decoder='yes'
+ape_demuxer='yes'
+ar_default='ar'
+arch='arm'
+arch_default='i686'
+armv5te='yes'
+armv5te_deps='arm'
+armv6='yes'
+armv6_deps='arm'
+armv6t2='yes'
+armv6t2_deps='arm'
+armvfp='yes'
+armvfp_deps='arm'
+asf_demuxer='yes'
+asf_stream_muxer_select='asf_muxer'
+asm='no'
+ass_demuxer='yes'
+asv1_decoder='yes'
+asv2_decoder='yes'
+atrac1_decoder='yes'
+atrac1_decoder_select='mdct'
+atrac3_decoder='yes'
+atrac3_decoder_select='mdct'
+au_demuxer='yes'
+audio_beos_indev_deps='audio_beos'
+audio_beos_indev_extralibs='-lmedia -lbe'
+audio_beos_outdev_deps='audio_beos'
+audio_beos_outdev_extralibs='-lmedia -lbe'
+aura2_decoder='yes'
+aura_decoder='yes'
+avcodec='yes'
+avdevice='no'
+avdevice_deps='avcodec avformat'
+avfilter='yes'
+avfilter_lavf_deps='avformat'
+avformat='yes'
+avformat_deps='avcodec'
+avi_demuxer='yes'
+avisynth_demuxer='yes'
+avisynth_demuxer_deps='avisynth'
+avs_decoder='yes'
+avs_demuxer='yes'
+avutil='yes'
+bethsoftvid_decoder='yes'
+bethsoftvid_demuxer='yes'
+bfi_decoder='yes'
+bfi_demuxer='yes'
+bindir_default='${prefix}/bin'
+bink_decoder='yes'
+bink_demuxer='yes'
+binkaudio_dct_decoder='yes'
+binkaudio_dct_decoder_select='mdct rdft dct'
+binkaudio_rdft_decoder='yes'
+binkaudio_rdft_decoder_select='mdct rdft'
+bktr_indev_deps_any='dev_bktr_ioctl_bt848_h machine_ioctl_bt848_h dev_video_bktr_ioctl_bt848_h dev_ic_bt8xx_h'
+bmp_decoder='yes'
+bsfs_if_any='aac_adtstoasc_bsf
+dump_extradata_bsf
+h264_mp4toannexb_bsf
+imx_dump_header_bsf
+mjpega_dump_header_bsf
+mp3_header_compress_bsf
+mp3_header_decompress_bsf
+mov2textsub_bsf
+noise_bsf
+remove_extradata_bsf
+text2movsub_bsf'
+c93_decoder='yes'
+c93_demuxer='yes'
+caf_demuxer='yes'
+cavs_decoder='yes'
+cavs_decoder_select='golomb'
+cavsvideo_demuxer='yes'
+cavsvideo_parser='yes'
+cc='/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc'
+cc_default='gcc'
+cc_version='"unknown"'
+cdg_demuxer='yes'
+cdgraphics_decoder='yes'
+cinepak_decoder='yes'
+cljr_decoder='yes'
+cook_decoder='yes'
+cook_decoder_select='mdct'
+cpu='generic'
+cross_compile='yes'
+cross_prefix='/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-'
+cscd_decoder='yes'
+cscd_decoder_suggest='zlib'
+cyuv_decoder='yes'
+datadir_default='${prefix}/share/ffmpeg'
+daud_demuxer='yes'
+dca_decoder='yes'
+dca_decoder_select='mdct'
+dca_parser='yes'
+debug='yes'
+decoders_if_any='aasc_decoder
+amv_decoder
+anm_decoder
+asv1_decoder
+asv2_decoder
+aura_decoder
+aura2_decoder
+avs_decoder
+bethsoftvid_decoder
+bfi_decoder
+bink_decoder
+bmp_decoder
+c93_decoder
+cavs_decoder
+cdgraphics_decoder
+cinepak_decoder
+cljr_decoder
+cscd_decoder
+cyuv_decoder
+dnxhd_decoder
+dpx_decoder
+dsicinvideo_decoder
+dvvideo_decoder
+dxa_decoder
+eacmv_decoder
+eamad_decoder
+eatgq_decoder
+eatgv_decoder
+eatqi_decoder
+eightbps_decoder
+eightsvx_exp_decoder
+eightsvx_fib_decoder
+escape124_decoder
+ffv1_decoder
+ffvhuff_decoder
+flashsv_decoder
+flic_decoder
+flv_decoder
+fourxm_decoder
+fraps_decoder
+frwu_decoder
+gif_decoder
+h261_decoder
+h263_decoder
+h263i_decoder
+h264_decoder
+h264_vdpau_decoder
+huffyuv_decoder
+idcin_decoder
+iff_byterun1_decoder
+iff_ilbm_decoder
+indeo2_decoder
+indeo3_decoder
+indeo5_decoder
+interplay_video_decoder
+jpegls_decoder
+kgv1_decoder
+kmvc_decoder
+loco_decoder
+mdec_decoder
+mimic_decoder
+mjpeg_decoder
+mjpegb_decoder
+mmvideo_decoder
+motionpixels_decoder
+mpeg_xvmc_decoder
+mpeg1video_decoder
+mpeg2video_decoder
+mpeg4_decoder
+mpeg4_vdpau_decoder
+mpegvideo_decoder
+mpeg_vdpau_decoder
+mpeg1_vdpau_decoder
+msmpeg4v1_decoder
+msmpeg4v2_decoder
+msmpeg4v3_decoder
+msrle_decoder
+msvideo1_decoder
+mszh_decoder
+nuv_decoder
+pam_decoder
+pbm_decoder
+pcx_decoder
+pgm_decoder
+pgmyuv_decoder
+png_decoder
+ppm_decoder
+ptx_decoder
+qdraw_decoder
+qpeg_decoder
+qtrle_decoder
+r210_decoder
+rawvideo_decoder
+rl2_decoder
+roq_decoder
+rpza_decoder
+rv10_decoder
+rv20_decoder
+rv30_decoder
+rv40_decoder
+sgi_decoder
+smacker_decoder
+smc_decoder
+snow_decoder
+sp5x_decoder
+sunrast_decoder
+svq1_decoder
+svq3_decoder
+targa_decoder
+theora_decoder
+thp_decoder
+tiertexseqvideo_decoder
+tiff_decoder
+tmv_decoder
+truemotion1_decoder
+truemotion2_decoder
+tscc_decoder
+txd_decoder
+ulti_decoder
+v210_decoder
+v210x_decoder
+vb_decoder
+vc1_decoder
+vc1_vdpau_decoder
+vcr1_decoder
+vmdvideo_decoder
+vmnc_decoder
+vp3_decoder
+vp5_decoder
+vp6_decoder
+vp6a_decoder
+vp6f_decoder
+vqa_decoder
+wmv1_decoder
+wmv2_decoder
+wmv3_decoder
+wmv3_vdpau_decoder
+wnv1_decoder
+xan_wc3_decoder
+xl_decoder
+yop_decoder
+zlib_decoder
+zmbv_decoder
+aac_decoder
+ac3_decoder
+alac_decoder
+als_decoder
+amrnb_decoder
+ape_decoder
+atrac1_decoder
+atrac3_decoder
+binkaudio_dct_decoder
+binkaudio_rdft_decoder
+cook_decoder
+dca_decoder
+dsicinaudio_decoder
+eac3_decoder
+flac_decoder
+imc_decoder
+mace3_decoder
+mace6_decoder
+mlp_decoder
+mp1_decoder
+mp2_decoder
+mp3_decoder
+mp3adu_decoder
+mp3on4_decoder
+mpc7_decoder
+mpc8_decoder
+nellymoser_decoder
+qcelp_decoder
+qdm2_decoder
+ra_144_decoder
+ra_288_decoder
+shorten_decoder
+sipr_decoder
+smackaud_decoder
+sonic_decoder
+truehd_decoder
+truespeech_decoder
+tta_decoder
+twinvq_decoder
+vmdaudio_decoder
+vorbis_decoder
+wavpack_decoder
+wmapro_decoder
+wmav1_decoder
+wmav2_decoder
+wmavoice_decoder
+ws_snd1_decoder
+pcm_alaw_decoder
+pcm_bluray_decoder
+pcm_dvd_decoder
+pcm_f32be_decoder
+pcm_f32le_decoder
+pcm_f64be_decoder
+pcm_f64le_decoder
+pcm_mulaw_decoder
+pcm_s8_decoder
+pcm_s16be_decoder
+pcm_s16le_decoder
+pcm_s16le_planar_decoder
+pcm_s24be_decoder
+pcm_s24daud_decoder
+pcm_s24le_decoder
+pcm_s32be_decoder
+pcm_s32le_decoder
+pcm_u8_decoder
+pcm_u16be_decoder
+pcm_u16le_decoder
+pcm_u24be_decoder
+pcm_u24le_decoder
+pcm_u32be_decoder
+pcm_u32le_decoder
+pcm_zork_decoder
+interplay_dpcm_decoder
+roq_dpcm_decoder
+sol_dpcm_decoder
+xan_dpcm_decoder
+adpcm_4xm_decoder
+adpcm_adx_decoder
+adpcm_ct_decoder
+adpcm_ea_decoder
+adpcm_ea_maxis_xa_decoder
+adpcm_ea_r1_decoder
+adpcm_ea_r2_decoder
+adpcm_ea_r3_decoder
+adpcm_ea_xas_decoder
+adpcm_g726_decoder
+adpcm_ima_amv_decoder
+adpcm_ima_dk3_decoder
+adpcm_ima_dk4_decoder
+adpcm_ima_ea_eacs_decoder
+adpcm_ima_ea_sead_decoder
+adpcm_ima_iss_decoder
+adpcm_ima_qt_decoder
+adpcm_ima_smjpeg_decoder
+adpcm_ima_wav_decoder
+adpcm_ima_ws_decoder
+adpcm_ms_decoder
+adpcm_sbpro_2_decoder
+adpcm_sbpro_3_decoder
+adpcm_sbpro_4_decoder
+adpcm_swf_decoder
+adpcm_thp_decoder
+adpcm_xa_decoder
+adpcm_yamaha_decoder
+dvbsub_decoder
+dvdsub_decoder
+pgssub_decoder
+xsub_decoder
+libdirac_decoder
+libfaad_decoder
+libgsm_decoder
+libgsm_ms_decoder
+libopencore_amrnb_decoder
+libopencore_amrwb_decoder
+libopenjpeg_decoder
+libschroedinger_decoder
+libspeex_decoder
+libvpx_decoder'
+demuxers_if_any='aac_demuxer
+ac3_demuxer
+aea_demuxer
+aiff_demuxer
+amr_demuxer
+anm_demuxer
+apc_demuxer
+ape_demuxer
+asf_demuxer
+ass_demuxer
+au_demuxer
+avi_demuxer
+avisynth_demuxer
+avs_demuxer
+bethsoftvid_demuxer
+bfi_demuxer
+bink_demuxer
+c93_demuxer
+caf_demuxer
+cavsvideo_demuxer
+cdg_demuxer
+daud_demuxer
+dirac_demuxer
+dnxhd_demuxer
+dsicin_demuxer
+dts_demuxer
+dv_demuxer
+dxa_demuxer
+ea_demuxer
+ea_cdata_demuxer
+eac3_demuxer
+ffm_demuxer
+filmstrip_demuxer
+flac_demuxer
+flic_demuxer
+flv_demuxer
+fourxm_demuxer
+gsm_demuxer
+gxf_demuxer
+h261_demuxer
+h263_demuxer
+h264_demuxer
+idcin_demuxer
+iff_demuxer
+image2_demuxer
+image2pipe_demuxer
+ingenient_demuxer
+ipmovie_demuxer
+iss_demuxer
+iv8_demuxer
+lmlm4_demuxer
+m4v_demuxer
+matroska_demuxer
+mjpeg_demuxer
+mlp_demuxer
+mm_demuxer
+mmf_demuxer
+mov_demuxer
+mp3_demuxer
+mpc_demuxer
+mpc8_demuxer
+mpegps_demuxer
+mpegts_demuxer
+mpegtsraw_demuxer
+mpegvideo_demuxer
+msnwc_tcp_demuxer
+mtv_demuxer
+mvi_demuxer
+mxf_demuxer
+nc_demuxer
+nsv_demuxer
+nut_demuxer
+nuv_demuxer
+ogg_demuxer
+oma_demuxer
+pcm_alaw_demuxer
+pcm_mulaw_demuxer
+pcm_f64be_demuxer
+pcm_f64le_demuxer
+pcm_f32be_demuxer
+pcm_f32le_demuxer
+pcm_s32be_demuxer
+pcm_s32le_demuxer
+pcm_s24be_demuxer
+pcm_s24le_demuxer
+pcm_s16be_demuxer
+pcm_s16le_demuxer
+pcm_s8_demuxer
+pcm_u32be_demuxer
+pcm_u32le_demuxer
+pcm_u24be_demuxer
+pcm_u24le_demuxer
+pcm_u16be_demuxer
+pcm_u16le_demuxer
+pcm_u8_demuxer
+pva_demuxer
+qcp_demuxer
+r3d_demuxer
+rawvideo_demuxer
+rl2_demuxer
+rm_demuxer
+roq_demuxer
+rpl_demuxer
+rtsp_demuxer
+sdp_demuxer
+segafilm_demuxer
+shorten_demuxer
+siff_demuxer
+smacker_demuxer
+sol_demuxer
+sox_demuxer
+str_demuxer
+swf_demuxer
+thp_demuxer
+tiertexseq_demuxer
+tmv_demuxer
+truehd_demuxer
+tta_demuxer
+txd_demuxer
+vc1_demuxer
+vc1t_demuxer
+vmd_demuxer
+voc_demuxer
+vqf_demuxer
+w64_demuxer
+wav_demuxer
+wc3_demuxer
+wsaud_demuxer
+wsvqa_demuxer
+wv_demuxer
+xa_demuxer
+yop_demuxer
+yuv4mpegpipe_demuxer
+libnut_demuxer'
+dirac_demuxer='yes'
+dirac_demuxer_deps='dirac_parser'
+dirac_parser='yes'
+dnxhd_decoder='yes'
+dnxhd_demuxer='yes'
+dnxhd_encoder_select='aandct'
+dnxhd_parser='yes'
+doc='yes'
+doc_deps='texi2html'
+dpx_decoder='yes'
+dsicin_demuxer='yes'
+dsicinaudio_decoder='yes'
+dsicinvideo_decoder='yes'
+dts_demuxer='yes'
+dump_extradata_bsf='yes'
+dv1394_indev_deps='dv1394 dv_demuxer'
+dv_demuxer='yes'
+dvbsub_decoder='yes'
+dvbsub_parser='yes'
+dvdsub_decoder='yes'
+dvdsub_parser='yes'
+dvvideo_decoder='yes'
+dxa_decoder='yes'
+dxa_decoder_select='zlib'
+dxa_demuxer='yes'
+ea_cdata_demuxer='yes'
+ea_demuxer='yes'
+eac3_decoder='yes'
+eac3_decoder_select='ac3_decoder'
+eac3_demuxer='yes'
+eac3_demuxer_select='ac3_parser'
+eacmv_decoder='yes'
+eamad_decoder='yes'
+eamad_decoder_select='aandct'
+eatgq_decoder='yes'
+eatgq_decoder_select='aandct'
+eatgv_decoder='yes'
+eatqi_decoder='yes'
+eatqi_decoder_select='aandct'
+eightbps_decoder='yes'
+eightsvx_exp_decoder='yes'
+eightsvx_fib_decoder='yes'
+encoders_if_any='asv1_encoder
+asv2_encoder
+bmp_encoder
+dnxhd_encoder
+dvvideo_encoder
+ffv1_encoder
+ffvhuff_encoder
+flashsv_encoder
+flv_encoder
+gif_encoder
+h261_encoder
+h263_encoder
+h263p_encoder
+huffyuv_encoder
+jpegls_encoder
+ljpeg_encoder
+mjpeg_encoder
+mpeg1video_encoder
+mpeg2video_encoder
+mpeg4_encoder
+msmpeg4v1_encoder
+msmpeg4v2_encoder
+msmpeg4v3_encoder
+pam_encoder
+pbm_encoder
+pcx_encoder
+pgm_encoder
+pgmyuv_encoder
+png_encoder
+ppm_encoder
+qtrle_encoder
+rawvideo_encoder
+roq_encoder
+rv10_encoder
+rv20_encoder
+sgi_encoder
+snow_encoder
+svq1_encoder
+targa_encoder
+tiff_encoder
+v210_encoder
+wmv1_encoder
+wmv2_encoder
+zlib_encoder
+zmbv_encoder
+aac_encoder
+ac3_encoder
+alac_encoder
+flac_encoder
+mp2_encoder
+nellymoser_encoder
+sonic_encoder
+sonic_ls_encoder
+wmav1_encoder
+wmav2_encoder
+pcm_alaw_encoder
+pcm_f32be_encoder
+pcm_f32le_encoder
+pcm_f64be_encoder
+pcm_f64le_encoder
+pcm_mulaw_encoder
+pcm_s8_encoder
+pcm_s16be_encoder
+pcm_s16le_encoder
+pcm_s24be_encoder
+pcm_s24daud_encoder
+pcm_s24le_encoder
+pcm_s32be_encoder
+pcm_s32le_encoder
+pcm_u8_encoder
+pcm_u16be_encoder
+pcm_u16le_encoder
+pcm_u24be_encoder
+pcm_u24le_encoder
+pcm_u32be_encoder
+pcm_u32le_encoder
+pcm_zork_encoder
+roq_dpcm_encoder
+adpcm_adx_encoder
+adpcm_g726_encoder
+adpcm_ima_qt_encoder
+adpcm_ima_wav_encoder
+adpcm_ms_encoder
+adpcm_swf_encoder
+adpcm_yamaha_encoder
+dvbsub_encoder
+dvdsub_encoder
+xsub_encoder
+libdirac_encoder
+libfaac_encoder
+libgsm_encoder
+libgsm_ms_encoder
+libmp3lame_encoder
+libopencore_amrnb_encoder
+libschroedinger_encoder
+libtheora_encoder
+libvorbis_encoder
+libvpx_encoder
+libx264_encoder
+libxvid_encoder'
+escape124_decoder='yes'
+extra_cflags=' -fPIC -DANDROID'
+fast_64bit_if_any='alpha ia64 mips64 parisc64 ppc64 sparc64 x86_64'
+fast_clz_if_any='alpha armv5te avr32 mips ppc x86'
+fast_unaligned_if_any='armv6 ppc x86'
+fastdiv='yes'
+ffm_demuxer='yes'
+ffmpeg='no'
+ffmpeg_deps='avcodec avformat swscale'
+ffplay='no'
+ffplay_deps='avcodec avformat swscale sdl'
+ffplay_select='rdft'
+ffprobe='no'
+ffprobe_deps='avcodec avformat'
+ffserver='no'
+ffserver_deps='avformat ffm_muxer rtp_protocol rtsp_demuxer'
+ffserver_extralibs='$ldl'
+ffv1_decoder='yes'
+ffv1_decoder_select='golomb'
+ffvhuff_decoder='yes'
+file_protocol='yes'
+filmstrip_demuxer='yes'
+filters_if_any=''
+flac_decoder='yes'
+flac_decoder_select='golomb'
+flac_demuxer='yes'
+flac_encoder_select='golomb lpc'
+flashsv_decoder='yes'
+flashsv_decoder_select='zlib'
+flashsv_encoder_select='zlib'
+flic_decoder='yes'
+flic_demuxer='yes'
+flv_decoder='yes'
+flv_decoder_select='h263_decoder'
+flv_demuxer='yes'
+flv_encoder_select='h263_encoder'
+fourxm_decoder='yes'
+fourxm_demuxer='yes'
+fraps_decoder='yes'
+frwu_decoder='yes'
+gif_decoder='yes'
+gopher_protocol_deps='network'
+gpl='yes'
+gsm_demuxer='yes'
+gxf_demuxer='yes'
+h261_decoder='yes'
+h261_demuxer='yes'
+h261_encoder_select='aandct'
+h261_parser='yes'
+h263_decoder='yes'
+h263_decoder_select='h263_parser'
+h263_demuxer='yes'
+h263_encoder_select='aandct'
+h263_parser='yes'
+h263_vaapi_hwaccel='yes'
+h263_vaapi_hwaccel_select='vaapi h263_decoder'
+h263i_decoder='yes'
+h263i_decoder_select='h263_decoder'
+h263p_encoder_select='h263_encoder'
+h264_decoder='yes'
+h264_decoder_select='golomb h264dsp'
+h264_demuxer='yes'
+h264_dxva2_hwaccel='yes'
+h264_dxva2_hwaccel_deps='dxva2api_h'
+h264_dxva2_hwaccel_select='dxva2 h264_decoder'
+h264_mp4toannexb_bsf='yes'
+h264_parser='yes'
+h264_parser_select='golomb h264dsp'
+h264_vaapi_hwaccel='yes'
+h264_vaapi_hwaccel_select='vaapi'
+h264_vdpau_decoder='yes'
+h264_vdpau_decoder_select='vdpau h264_decoder'
+host_cc_default='gcc'
+host_cflags='-D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -O3 -g -Wall'
+host_libs='-lm'
+host_os='linux'
+http_protocol_deps='network'
+http_protocol_select='tcp_protocol'
+huffyuv_decoder='yes'
+hwaccels_if_any='h263_vaapi_hwaccel
+h264_dxva2_hwaccel
+h264_vaapi_hwaccel
+mpeg2_vaapi_hwaccel
+mpeg4_vaapi_hwaccel
+vc1_dxva2_hwaccel
+vc1_vaapi_hwaccel
+wmv3_dxva2_hwaccel
+wmv3_vaapi_hwaccel'
+idcin_decoder='yes'
+idcin_demuxer='yes'
+iff_byterun1_decoder='yes'
+iff_demuxer='yes'
+iff_ilbm_decoder='yes'
+image2_demuxer='yes'
+image2pipe_demuxer='yes'
+imc_decoder='yes'
+imc_decoder_select='fft mdct'
+imx_dump_header_bsf='yes'
+incdir_default='${prefix}/include'
+indeo2_decoder='yes'
+indeo3_decoder='yes'
+indeo5_decoder='yes'
+indevs_if_any=''
+ingenient_demuxer='yes'
+inline_asm_deps='!tms470'
+interplay_dpcm_decoder='yes'
+interplay_video_decoder='yes'
+ipmovie_demuxer='yes'
+ipod_muxer_select='mov_muxer'
+iss_demuxer='yes'
+iv8_demuxer='yes'
+iwmmxt='yes'
+iwmmxt_deps='arm'
+jack_indev_deps='jack_jack_h'
+jack_indev_extralibs='-ljack'
+jpegls_decoder='yes'
+jpegls_decoder_select='golomb'
+jpegls_encoder_select='golomb'
+kgv1_decoder='yes'
+kmvc_decoder='yes'
+l='--extra-ldflags='
+libdc1394_indev_deps='libdc1394'
+libdir_default='${prefix}/lib'
+libdirac_decoder='yes'
+libdirac_decoder_deps='libdirac !libschroedinger'
+libdirac_encoder_deps='libdirac'
+libfaac_encoder_deps='libfaac'
+libfaad_decoder='yes'
+libfaad_decoder_deps='libfaad'
+libfaadbin_extralibs='$ldl'
+libgsm_decoder='yes'
+libgsm_decoder_deps='libgsm'
+libgsm_encoder_deps='libgsm'
+libgsm_ms_decoder='yes'
+libgsm_ms_decoder_deps='libgsm'
+libgsm_ms_encoder_deps='libgsm'
+libmp3lame_encoder_deps='libmp3lame'
+libnut_demuxer='yes'
+libnut_demuxer_deps='libnut'
+libnut_muxer_deps='libnut'
+libopencore_amrnb_decoder='yes'
+libopencore_amrnb_decoder_deps='libopencore_amrnb'
+libopencore_amrnb_encoder_deps='libopencore_amrnb'
+libopencore_amrwb_decoder='yes'
+libopencore_amrwb_decoder_deps='libopencore_amrwb'
+libopenjpeg_decoder='yes'
+libopenjpeg_decoder_deps='libopenjpeg'
+libschroedinger_decoder='yes'
+libschroedinger_decoder_deps='libschroedinger'
+libschroedinger_encoder_deps='libschroedinger'
+libspeex_decoder='yes'
+libspeex_decoder_deps='libspeex'
+libtheora_encoder_deps='libtheora'
+libvorbis_encoder_deps='libvorbis'
+libvpx_decoder='yes'
+libvpx_decoder_deps='libvpx'
+libvpx_encoder_deps='libvpx'
+libx264_encoder_deps='libx264'
+libxvid_encoder_deps='libxvid'
+list='file_protocol
+gopher_protocol
+http_protocol
+pipe_protocol
+rtmp_protocol
+rtmpt_protocol
+rtmpe_protocol
+rtmpte_protocol
+rtmps_protocol
+rtp_protocol
+tcp_protocol
+udp_protocol
+concat_protocol'
+ljpeg_encoder_select='aandct'
+lmlm4_demuxer='yes'
+ln_s='ln -sf'
+loco_decoder='yes'
+loco_decoder_select='golomb'
+logfile='config.err'
+m4v_demuxer='yes'
+mace3_decoder='yes'
+mace6_decoder='yes'
+mandir_default='${prefix}/share/man'
+matroska_audio_muxer_select='matroska_muxer'
+matroska_demuxer='yes'
+matroska_demuxer_suggest='zlib bzlib'
+mdct_select='fft'
+mdec_decoder='yes'
+mimic_decoder='yes'
+mjpeg_decoder='yes'
+mjpeg_demuxer='yes'
+mjpeg_encoder_select='aandct'
+mjpeg_parser='yes'
+mjpega_dump_header_bsf='yes'
+mjpegb_decoder='yes'
+mlp_decoder='yes'
+mlp_decoder_select='mlp_parser'
+mlp_demuxer='yes'
+mlp_parser='yes'
+mm_demuxer='yes'
+mmf_demuxer='yes'
+mmi='yes'
+mmi_deps='mips'
+mmvideo_decoder='yes'
+mmx='yes'
+mmx2='yes'
+mmx2_deps='mmx'
+mmx_deps='x86'
+motionpixels_decoder='yes'
+mov2textsub_bsf='yes'
+mov_demuxer='yes'
+mov_demuxer_suggest='zlib'
+movie_filter_deps='avfilter_lavf'
+mp1_decoder='yes'
+mp2_decoder='yes'
+mp3_decoder='yes'
+mp3_demuxer='yes'
+mp3_demuxer_deps='mpegaudio_parser'
+mp3_header_compress_bsf='yes'
+mp3_header_decompress_bsf='yes'
+mp3adu_decoder='yes'
+mp3on4_decoder='yes'
+mp4_muxer_select='mov_muxer'
+mpc7_decoder='yes'
+mpc8_decoder='yes'
+mpc8_demuxer='yes'
+mpc_demuxer='yes'
+mpeg1_vdpau_decoder='yes'
+mpeg1_vdpau_decoder_select='vdpau mpeg1video_decoder'
+mpeg1video_decoder='yes'
+mpeg1video_encoder_select='aandct'
+mpeg2_vaapi_hwaccel='yes'
+mpeg2_vaapi_hwaccel_select='vaapi mpeg2video_decoder'
+mpeg2video_decoder='yes'
+mpeg2video_encoder_select='aandct'
+mpeg4_decoder='yes'
+mpeg4_decoder_select='h263_decoder mpeg4video_parser'
+mpeg4_encoder_select='h263_encoder'
+mpeg4_vaapi_hwaccel='yes'
+mpeg4_vaapi_hwaccel_select='vaapi mpeg4_decoder'
+mpeg4_vdpau_decoder='yes'
+mpeg4_vdpau_decoder_select='vdpau mpeg4_decoder'
+mpeg4video_parser='yes'
+mpeg_vdpau_decoder='yes'
+mpeg_vdpau_decoder_select='vdpau mpegvideo_decoder'
+mpeg_xvmc_decoder='yes'
+mpeg_xvmc_decoder_deps='X11_extensions_XvMClib_h'
+mpeg_xvmc_decoder_select='mpegvideo_decoder'
+mpegaudio_hp='no'
+mpegaudio_parser='yes'
+mpegps_demuxer='yes'
+mpegts_demuxer='yes'
+mpegtsraw_demuxer='yes'
+mpegtsraw_demuxer_select='mpegts_demuxer'
+mpegvideo_decoder='yes'
+mpegvideo_demuxer='yes'
+mpegvideo_parser='yes'
+msmpeg4v1_decoder='yes'
+msmpeg4v1_decoder_select='h263_decoder'
+msmpeg4v1_encoder_select='h263_encoder'
+msmpeg4v2_decoder='yes'
+msmpeg4v2_decoder_select='h263_decoder'
+msmpeg4v2_encoder_select='h263_encoder'
+msmpeg4v3_decoder='yes'
+msmpeg4v3_decoder_select='h263_decoder'
+msmpeg4v3_encoder_select='h263_encoder'
+msnwc_tcp_demuxer='yes'
+msrle_decoder='yes'
+msvideo1_decoder='yes'
+mszh_decoder='yes'
+mtv_demuxer='yes'
+muxers_if_any='ac3_muxer
+adts_muxer
+aiff_muxer
+amr_muxer
+asf_muxer
+ass_muxer
+asf_stream_muxer
+au_muxer
+avi_muxer
+avm2_muxer
+crc_muxer
+daud_muxer
+dirac_muxer
+dnxhd_muxer
+dts_muxer
+dv_muxer
+eac3_muxer
+ffm_muxer
+filmstrip_muxer
+flac_muxer
+flv_muxer
+framecrc_muxer
+gif_muxer
+gxf_muxer
+h261_muxer
+h263_muxer
+h264_muxer
+image2_muxer
+image2pipe_muxer
+ipod_muxer
+m4v_muxer
+matroska_muxer
+matroska_audio_muxer
+mjpeg_muxer
+mlp_muxer
+mmf_muxer
+mov_muxer
+mp2_muxer
+mp3_muxer
+mp4_muxer
+mpeg1system_muxer
+mpeg1vcd_muxer
+mpeg1video_muxer
+mpeg2dvd_muxer
+mpeg2svcd_muxer
+mpeg2video_muxer
+mpeg2vob_muxer
+mpegts_muxer
+mpjpeg_muxer
+mxf_muxer
+mxf_d10_muxer
+null_muxer
+nut_muxer
+ogg_muxer
+pcm_alaw_muxer
+pcm_mulaw_muxer
+pcm_f64be_muxer
+pcm_f64le_muxer
+pcm_f32be_muxer
+pcm_f32le_muxer
+pcm_s32be_muxer
+pcm_s32le_muxer
+pcm_s24be_muxer
+pcm_s24le_muxer
+pcm_s16be_muxer
+pcm_s16le_muxer
+pcm_s8_muxer
+pcm_u32be_muxer
+pcm_u32le_muxer
+pcm_u24be_muxer
+pcm_u24le_muxer
+pcm_u16be_muxer
+pcm_u16le_muxer
+pcm_u8_muxer
+psp_muxer
+rawvideo_muxer
+rm_muxer
+roq_muxer
+rtp_muxer
+rtsp_muxer
+sox_muxer
+spdif_muxer
+swf_muxer
+tg2_muxer
+tgp_muxer
+truehd_muxer
+vc1t_muxer
+voc_muxer
+wav_muxer
+webm_muxer
+yuv4mpegpipe_muxer
+libnut_muxer'
+mvi_demuxer='yes'
+mxf_d10_muxer_select='mxf_muxer'
+mxf_demuxer='yes'
+n='protocols'
+name='file_protocol'
+nc_demuxer='yes'
+need_memalign='altivec neon sse'
+nellymoser_decoder='yes'
+nellymoser_decoder_select='mdct'
+nellymoser_encoder_select='mdct'
+neon='yes'
+neon_deps='arm'
+network='no'
+nm='/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-nm'
+nm_default='nm'
+nm_opts='-g'
+noise_bsf='yes'
+nonfree='yes'
+nsv_demuxer='yes'
+nut_demuxer='yes'
+nuv_decoder='yes'
+nuv_demuxer='yes'
+objformat='elf'
+ogg_demuxer='yes'
+ogg_demuxer_select='golomb'
+oma_demuxer='yes'
+op='='
+opt='--extra-ldflags=-Wl,-T,/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/arm-eabi/lib/ldscripts/armelf.x -Wl,-rpath-link=/home/uday/mount/android-ndk-r4b/build/platforms/android-8/arch-arm/usr/lib -L/home/uday/mount/android-ndk-r4b/build/platforms/android-8/arch-arm/usr/lib -nostdlib /home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/lib/gcc/arm-eabi/4.4.0/crtbegin.o /home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/lib/gcc/arm-eabi/4.4.0/crtend.o -lc -lm -ldl'
+optimizations='yes'
+option='armv5te'
+optname='extra_cflags'
+optval='-Wl,-T,/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/arm-eabi/lib/ldscripts/armelf.x -Wl,-rpath-link=/home/uday/mount/android-ndk-r4b/build/platforms/android-8/arch-arm/usr/lib -L/home/uday/mount/android-ndk-r4b/build/platforms/android-8/arch-arm/usr/lib -nostdlib /home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/lib/gcc/arm-eabi/4.4.0/crtbegin.o /home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/lib/gcc/arm-eabi/4.4.0/crtend.o -lc -lm -ldl'
+oss_indev_deps_any='soundcard_h sys_soundcard_h'
+oss_outdev_deps_any='soundcard_h sys_soundcard_h'
+outdevs_if_any=''
+pam_decoder='yes'
+parsers_if_any='aac_parser
+ac3_parser
+cavsvideo_parser
+dca_parser
+dirac_parser
+dnxhd_parser
+dvbsub_parser
+dvdsub_parser
+h261_parser
+h263_parser
+h264_parser
+mjpeg_parser
+mlp_parser
+mpeg4video_parser
+mpegaudio_parser
+mpegvideo_parser
+pnm_parser
+vc1_parser
+vp3_parser'
+pbm_decoder='yes'
+pcm_alaw_decoder='yes'
+pcm_alaw_demuxer='yes'
+pcm_bluray_decoder='yes'
+pcm_dvd_decoder='yes'
+pcm_f32be_decoder='yes'
+pcm_f32be_demuxer='yes'
+pcm_f32le_decoder='yes'
+pcm_f32le_demuxer='yes'
+pcm_f64be_decoder='yes'
+pcm_f64be_demuxer='yes'
+pcm_f64le_decoder='yes'
+pcm_f64le_demuxer='yes'
+pcm_mulaw_decoder='yes'
+pcm_mulaw_demuxer='yes'
+pcm_s16be_decoder='yes'
+pcm_s16be_demuxer='yes'
+pcm_s16le_decoder='yes'
+pcm_s16le_demuxer='yes'
+pcm_s16le_planar_decoder='yes'
+pcm_s24be_decoder='yes'
+pcm_s24be_demuxer='yes'
+pcm_s24daud_decoder='yes'
+pcm_s24le_decoder='yes'
+pcm_s24le_demuxer='yes'
+pcm_s32be_decoder='yes'
+pcm_s32be_demuxer='yes'
+pcm_s32le_decoder='yes'
+pcm_s32le_demuxer='yes'
+pcm_s8_decoder='yes'
+pcm_s8_demuxer='yes'
+pcm_u16be_decoder='yes'
+pcm_u16be_demuxer='yes'
+pcm_u16le_decoder='yes'
+pcm_u16le_demuxer='yes'
+pcm_u24be_decoder='yes'
+pcm_u24be_demuxer='yes'
+pcm_u24le_decoder='yes'
+pcm_u24le_demuxer='yes'
+pcm_u32be_decoder='yes'
+pcm_u32be_demuxer='yes'
+pcm_u32le_decoder='yes'
+pcm_u32le_demuxer='yes'
+pcm_u8_decoder='yes'
+pcm_u8_demuxer='yes'
+pcm_zork_decoder='yes'
+pcx_decoder='yes'
+pgm_decoder='yes'
+pgmyuv_decoder='yes'
+pgssub_decoder='yes'
+png_decoder='yes'
+png_decoder_select='zlib'
+png_encoder_select='zlib'
+pnm_parser='yes'
+ppc4xx='yes'
+ppc4xx_deps='ppc'
+ppm_decoder='yes'
+prefix_default='/usr/local'
+protocols='yes'
+protocols_if_any='file_protocol
+gopher_protocol
+http_protocol
+pipe_protocol
+rtmp_protocol
+rtmpt_protocol
+rtmpe_protocol
+rtmpte_protocol
+rtmps_protocol
+rtp_protocol
+tcp_protocol
+udp_protocol
+concat_protocol'
+psp_muxer_select='mov_muxer'
+ptx_decoder='yes'
+pva_demuxer='yes'
+qcelp_decoder='yes'
+qcelp_decoder_select='lsp'
+qcp_demuxer='yes'
+qdm2_decoder='yes'
+qdm2_decoder_select='mdct rdft'
+qdraw_decoder='yes'
+qpeg_decoder='yes'
+qtrle_decoder='yes'
+quotes='""'
+r=''"'"'-Wl,-T,/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/arm-eabi/lib/ldscripts/armelf.x -Wl,-rpath-link=/home/uday/mount/android-ndk-r4b/build/platforms/android-8/arch-arm/usr/lib -L/home/uday/mount/android-ndk-r4b/build/platforms/android-8/arch-arm/usr/lib -nostdlib /home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/lib/gcc/arm-eabi/4.4.0/crtbegin.o /home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/lib/gcc/arm-eabi/4.4.0/crtend.o -lc -lm -ldl'"'"
+r210_decoder='yes'
+r3d_demuxer='yes'
+ra_144_decoder='yes'
+ra_288_decoder='yes'
+ranlib='ranlib'
+rawvideo_decoder='yes'
+rawvideo_demuxer='yes'
+rdft_select='fft'
+remove_extradata_bsf='yes'
+rl2_decoder='yes'
+rl2_demuxer='yes'
+rm_demuxer='yes'
+roq_decoder='yes'
+roq_demuxer='yes'
+roq_dpcm_decoder='yes'
+rpl_demuxer='yes'
+rpza_decoder='yes'
+rtmp_protocol_deps='tcp_protocol'
+rtp_protocol_deps='udp_protocol'
+rtsp_demuxer='yes'
+rtsp_demuxer_deps='sdp_demuxer'
+rtsp_muxer_deps='sdp_demuxer'
+rtsp_muxer_select='rtp_muxer'
+rv10_decoder='yes'
+rv10_decoder_select='h263_decoder'
+rv10_encoder_select='h263_encoder'
+rv20_decoder='yes'
+rv20_decoder_select='h263_decoder'
+rv20_encoder_select='h263_encoder'
+rv30_decoder='yes'
+rv30_decoder_select='golomb h264dsp'
+rv40_decoder='yes'
+rv40_decoder_select='golomb h264dsp'
+sdp_demuxer='yes'
+sdp_demuxer_deps='rtp_protocol mpegts_demuxer'
+sdp_demuxer_select='asf_demuxer rm_demuxer'
+segafilm_demuxer='yes'
+sgi_decoder='yes'
+shlibdir_default='${prefix}/lib'
+shorten_decoder='yes'
+shorten_decoder_select='golomb'
+shorten_demuxer='yes'
+siff_demuxer='yes'
+sipr_decoder='yes'
+sipr_decoder_select='lsp'
+smackaud_decoder='yes'
+smacker_decoder='yes'
+smacker_demuxer='yes'
+smc_decoder='yes'
+snow_decoder='yes'
+snow_decoder_select='dwt'
+snow_encoder_select='aandct dwt'
+sol_demuxer='yes'
+sol_dpcm_decoder='yes'
+sonic_decoder='yes'
+sonic_decoder_select='golomb'
+sonic_encoder_select='golomb'
+sonic_ls_encoder_select='golomb'
+source_path='/home/uday/mount/workspace/ffmpeg-pics/jni'
+source_path_used='no'
+sox_demuxer='yes'
+sp5x_decoder='yes'
+spdif_muxer_select='aac_parser'
+sse='yes'
+sse_deps='mmx'
+ssse3='yes'
+ssse3_deps='sse'
+static='yes'
+str_demuxer='yes'
+strip_default='strip'
+stripping='no'
+sunrast_decoder='yes'
+svq1_decoder='yes'
+svq1_encoder_select='aandct'
+svq3_decoder='yes'
+svq3_decoder_select='golomb h264dsp'
+svq3_decoder_suggest='zlib'
+swf_demuxer='yes'
+swscale='yes'
+swscale_alpha='yes'
+symver_if_any='symver_asm_label symver_gnu_asm'
+targa_decoder='yes'
+target_os='linux'
+target_os_default='linux'
+target_path='$(CURDIR)'
+tcp_protocol_deps='network'
+text2movsub_bsf='yes'
+tg2_muxer_select='mov_muxer'
+tgp_muxer_select='mov_muxer'
+theora_decoder='yes'
+theora_decoder_select='vp3_decoder'
+thing='protocol'
+thp_decoder='yes'
+thp_demuxer='yes'
+tiertexseq_demuxer='yes'
+tiertexseqvideo_decoder='yes'
+tiff_decoder='yes'
+tiff_decoder_suggest='zlib'
+tiff_encoder_suggest='zlib'
+tmv_decoder='yes'
+tmv_demuxer='yes'
+truehd_decoder='yes'
+truehd_decoder_select='mlp_decoder'
+truehd_demuxer='yes'
+truemotion1_decoder='yes'
+truemotion2_decoder='yes'
+truespeech_decoder='yes'
+tscc_decoder='yes'
+tscc_decoder_select='zlib'
+tta_decoder='yes'
+tta_demuxer='yes'
+twinvq_decoder='yes'
+twinvq_decoder_select='mdct lsp'
+txd_decoder='yes'
+txd_demuxer='yes'
+udp_protocol_deps='network'
+ulti_decoder='yes'
+v='PROTOCOL_LIST'
+v210_decoder='yes'
+v210x_decoder='yes'
+v4l2_indev_deps_any='linux_videodev2_h sys_videoio_h'
+v4l_indev_deps='linux_videodev_h'
+vaapi_deps='va_va_h'
+value='yes'
+var='LDFLAGS'
+vb_decoder='yes'
+vc1_decoder='yes'
+vc1_decoder_select='h263_decoder'
+vc1_demuxer='yes'
+vc1_dxva2_hwaccel='yes'
+vc1_dxva2_hwaccel_deps='dxva2api_h DXVA_PictureParameters_wDecodedPictureIndex'
+vc1_dxva2_hwaccel_select='dxva2 vc1_decoder'
+vc1_parser='yes'
+vc1_vaapi_hwaccel='yes'
+vc1_vaapi_hwaccel_select='vaapi vc1_decoder'
+vc1_vdpau_decoder='yes'
+vc1_vdpau_decoder_select='vdpau vc1_decoder'
+vc1t_demuxer='yes'
+vcr1_decoder='yes'
+vdpau_deps='vdpau_vdpau_h vdpau_vdpau_x11_h'
+version3='yes'
+vfwcap_indev_deps='capCreateCaptureWindow'
+vfwcap_indev_extralibs='-lavicap32'
+vis='yes'
+vis_deps='sparc'
+vmd_demuxer='yes'
+vmdaudio_decoder='yes'
+vmdvideo_decoder='yes'
+vmnc_decoder='yes'
+voc_demuxer='yes'
+vorbis_decoder='yes'
+vorbis_decoder_select='mdct'
+vorbis_encoder_select='mdct'
+vp3_decoder='yes'
+vp3_parser='yes'
+vp5_decoder='yes'
+vp6_decoder='yes'
+vp6a_decoder='yes'
+vp6a_decoder_select='vp6_decoder'
+vp6f_decoder='yes'
+vp6f_decoder_select='vp6_decoder'
+vqa_decoder='yes'
+vqf_demuxer='yes'
+w64_demuxer='yes'
+w64_demuxer_deps='wav_demuxer'
+wav_demuxer='yes'
+wavpack_decoder='yes'
+wc3_demuxer='yes'
+wmapro_decoder='yes'
+wmapro_decoder_select='mdct'
+wmav1_decoder='yes'
+wmav1_decoder_select='mdct'
+wmav1_encoder_select='mdct'
+wmav2_decoder='yes'
+wmav2_decoder_select='mdct'
+wmav2_encoder_select='mdct'
+wmavoice_decoder='yes'
+wmavoice_decoder_select='lsp rdft dct'
+wmv1_decoder='yes'
+wmv1_decoder_select='h263_decoder'
+wmv1_encoder_select='h263_encoder'
+wmv2_decoder='yes'
+wmv2_decoder_select='h263_decoder'
+wmv2_encoder_select='h263_encoder'
+wmv3_decoder='yes'
+wmv3_decoder_select='vc1_decoder'
+wmv3_dxva2_hwaccel='yes'
+wmv3_dxva2_hwaccel_select='vc1_dxva2_hwaccel'
+wmv3_vaapi_hwaccel='yes'
+wmv3_vaapi_hwaccel_select='vc1_vaapi_hwaccel'
+wmv3_vdpau_decoder='yes'
+wmv3_vdpau_decoder_select='vc1_vdpau_decoder'
+wnv1_decoder='yes'
+ws_snd1_decoder='yes'
+wsaud_demuxer='yes'
+wsvqa_demuxer='yes'
+wv_demuxer='yes'
+x11_grab_device_indev_deps='x11grab XShmCreateImage'
+x11_grab_device_indev_extralibs='-lX11 -lXext -lXfixes'
+x86_64_suggest='cmov fast_cmov'
+xa_demuxer='yes'
+xan_dpcm_decoder='yes'
+xan_wc3_decoder='yes'
+xl_decoder='yes'
+xsub_decoder='yes'
+yasmexe='yasm'
+yop_decoder='yes'
+yop_demuxer='yes'
+yuv4mpegpipe_demuxer='yes'
+zlib_decoder='yes'
+zlib_decoder_select='zlib'
+zlib_encoder_select='zlib'
+zmbv_decoder='yes'
+zmbv_decoder_select='zlib'
+zmbv_encoder_select='zlib'
+type mktemp
+mktemp is /bin/mktemp
+check_ld
+check_cc
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	int main(void){ return 0; }
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -fPIC -DANDROID -c -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -Wl,-T,/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/arm-eabi/lib/ldscripts/armelf.x -Wl,-rpath-link=/home/uday/mount/android-ndk-r4b/build/platforms/android-8/arch-arm/usr/lib -L/home/uday/mount/android-ndk-r4b/build/platforms/android-8/arch-arm/usr/lib -nostdlib /home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/lib/gcc/arm-eabi/4.4.0/crtbegin.o /home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/lib/gcc/arm-eabi/4.4.0/crtend.o -lc -lm -ldl -o /tmp/ffconf.3FKKHVsK /tmp/ffconf.mFD3hqi5.o
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/../lib/gcc/arm-eabi/4.4.0/../../../../arm-eabi/bin/ld: warning: /tmp/ffconf.mFD3hqi5.o uses variable-size enums yet the output is to use 32-bit enums; use of enum values across objects may fail
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/../lib/gcc/arm-eabi/4.4.0/../../../../arm-eabi/bin/ld: warning: cannot find entry symbol _start; defaulting to 0000831c
+check_cflags -std=c99
+check_cc -std=c99
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	int x;
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -c -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+check_cc -D_FILE_OFFSET_BITS=64
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	#include <stdlib.h>
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -D_FILE_OFFSET_BITS=64 -c -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+/tmp/ffconf.7gpjoHZK.c:1:20: error: stdlib.h: No such file or directory
+check_cc -D_LARGEFILE_SOURCE
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	#include <stdlib.h>
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -D_LARGEFILE_SOURCE -c -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+/tmp/ffconf.7gpjoHZK.c:1:20: error: stdlib.h: No such file or directory
+check_host_cflags -std=c99
+check_host_cc -std=c99
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	int x;
+END /tmp/ffconf.7gpjoHZK.c
+gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -O3 -g -Wall -std=c99 -c -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+check_cpp_condition stdlib.h defined(__PIC__) || defined(__pic__) || defined(PIC)
+check_cpp
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	#include <stdlib.h>
+    2	#if !(defined(__PIC__) || defined(__pic__) || defined(PIC))
+    3	#error "unsatisfied condition: defined(__PIC__) || defined(__pic__) || defined(PIC)"
+    4	#endif
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -E -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+/tmp/ffconf.7gpjoHZK.c:1:20: error: stdlib.h: No such file or directory
+check_cflags -fomit-frame-pointer
+check_cc -fomit-frame-pointer
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	int x;
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -c -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+check_cc
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	int ff_extern;
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -c -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+check_cc
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	void foo(void) { __asm__ volatile ("" ::); }
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -c -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+check_cc
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	void foo(char * restrict p);
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -c -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+check_cc
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	struct { int x; } __attribute__((packed)) x;
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -c -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+check_cc
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	union { int x; } __attribute__((may_alias)) x;
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -c -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+check_cc
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	unsigned int endian = 'B' << 24 | 'I' << 16 | 'G' << 8 | 'E';
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -c -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+check_cflags -marm
+check_cc -marm
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	int x;
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -c -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+check_ld
+check_cc
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	__asm__ (".eabi_attribute 28, 1");
+    2	int main(void) { return 0; }
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -c -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -Wl,-T,/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/arm-eabi/lib/ldscripts/armelf.x -Wl,-rpath-link=/home/uday/mount/android-ndk-r4b/build/platforms/android-8/arch-arm/usr/lib -L/home/uday/mount/android-ndk-r4b/build/platforms/android-8/arch-arm/usr/lib -nostdlib /home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/lib/gcc/arm-eabi/4.4.0/crtbegin.o /home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/lib/gcc/arm-eabi/4.4.0/crtend.o -lc -lm -ldl -o /tmp/ffconf.3FKKHVsK /tmp/ffconf.mFD3hqi5.o
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/../lib/gcc/arm-eabi/4.4.0/../../../../arm-eabi/bin/ld: ERROR: /tmp/ffconf.mFD3hqi5.o uses VFP register arguments, /tmp/ffconf.3FKKHVsK does not
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/../lib/gcc/arm-eabi/4.4.0/../../../../arm-eabi/bin/ld: failed to merge target specific data of file /tmp/ffconf.mFD3hqi5.o
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/../lib/gcc/arm-eabi/4.4.0/../../../../arm-eabi/bin/ld: warning: cannot find entry symbol _start; defaulting to 0000831c
+collect2: ld returned 1 exit status
+check_asm pld "pld [r0]"
+check_as
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	void foo(void){ __asm__ volatile("pld [r0]"); }
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -c -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+check_asm armv5te "qadd r0, r0, r0"
+check_as
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	void foo(void){ __asm__ volatile("qadd r0, r0, r0"); }
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -c -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+check_asm armv6 "sadd16 r0, r0, r0"
+check_as
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	void foo(void){ __asm__ volatile("sadd16 r0, r0, r0"); }
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -c -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+/tmp/ccw40CfM.s: Assembler messages:
+/tmp/ccw40CfM.s:23: Error: selected processor does not support `sadd16 r0,r0,r0'
+check_asm armv6t2 "movt r0, #0"
+check_as
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	void foo(void){ __asm__ volatile("movt r0, #0"); }
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -c -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+/tmp/cc14cAwP.s: Assembler messages:
+/tmp/cc14cAwP.s:23: Error: selected processor does not support `movt r0,#0'
+check_asm armvfp "fadds s0, s0, s0"
+check_as
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	void foo(void){ __asm__ volatile("fadds s0, s0, s0"); }
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -c -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+/tmp/ccgLFERO.s: Assembler messages:
+/tmp/ccgLFERO.s:23: Error: selected processor does not support `fadds s0,s0,s0'
+check_asm iwmmxt "wunpckelub wr6, wr4"
+check_as
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	void foo(void){ __asm__ volatile("wunpckelub wr6, wr4"); }
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -c -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+/tmp/ccZ4H2sS.s: Assembler messages:
+/tmp/ccZ4H2sS.s:23: Error: selected processor does not support `wunpckelub wr6,wr4'
+check_asm neon "vadd.i16 q0, q0, q0"
+check_as
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	void foo(void){ __asm__ volatile("vadd.i16 q0, q0, q0"); }
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -c -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+/tmp/ccUU8qXT.s: Assembler messages:
+/tmp/ccUU8qXT.s:23: Error: bad instruction `vadd.i16 q0,q0,q0'
+check_func dlopen
+check_ld
+check_cc
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	extern int dlopen();
+    2	int main(void){ dlopen(); }
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -c -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -Wl,-T,/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/arm-eabi/lib/ldscripts/armelf.x -Wl,-rpath-link=/home/uday/mount/android-ndk-r4b/build/platforms/android-8/arch-arm/usr/lib -L/home/uday/mount/android-ndk-r4b/build/platforms/android-8/arch-arm/usr/lib -nostdlib /home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/lib/gcc/arm-eabi/4.4.0/crtbegin.o /home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/lib/gcc/arm-eabi/4.4.0/crtend.o -lc -lm -ldl -o /tmp/ffconf.3FKKHVsK /tmp/ffconf.mFD3hqi5.o
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/../lib/gcc/arm-eabi/4.4.0/../../../../arm-eabi/bin/ld: warning: /tmp/ffconf.mFD3hqi5.o uses variable-size enums yet the output is to use 32-bit enums; use of enum values across objects may fail
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/../lib/gcc/arm-eabi/4.4.0/../../../../arm-eabi/bin/ld: warning: cannot find entry symbol _start; defaulting to 0000834c
+check_func nanosleep
+check_ld
+check_cc
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	extern int nanosleep();
+    2	int main(void){ nanosleep(); }
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -c -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -Wl,-T,/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/arm-eabi/lib/ldscripts/armelf.x -Wl,-rpath-link=/home/uday/mount/android-ndk-r4b/build/platforms/android-8/arch-arm/usr/lib -L/home/uday/mount/android-ndk-r4b/build/platforms/android-8/arch-arm/usr/lib -nostdlib /home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/lib/gcc/arm-eabi/4.4.0/crtbegin.o /home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/lib/gcc/arm-eabi/4.4.0/crtend.o -lc -lm -ldl -o /tmp/ffconf.3FKKHVsK /tmp/ffconf.mFD3hqi5.o
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/../lib/gcc/arm-eabi/4.4.0/../../../../arm-eabi/bin/ld: warning: /tmp/ffconf.mFD3hqi5.o uses variable-size enums yet the output is to use 32-bit enums; use of enum values across objects may fail
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/../lib/gcc/arm-eabi/4.4.0/../../../../arm-eabi/bin/ld: warning: cannot find entry symbol _start; defaulting to 00008350
+check_func fork
+check_ld
+check_cc
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	extern int fork();
+    2	int main(void){ fork(); }
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -c -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -Wl,-T,/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/arm-eabi/lib/ldscripts/armelf.x -Wl,-rpath-link=/home/uday/mount/android-ndk-r4b/build/platforms/android-8/arch-arm/usr/lib -L/home/uday/mount/android-ndk-r4b/build/platforms/android-8/arch-arm/usr/lib -nostdlib /home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/lib/gcc/arm-eabi/4.4.0/crtbegin.o /home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/lib/gcc/arm-eabi/4.4.0/crtend.o -lc -lm -ldl -o /tmp/ffconf.3FKKHVsK /tmp/ffconf.mFD3hqi5.o
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/../lib/gcc/arm-eabi/4.4.0/../../../../arm-eabi/bin/ld: warning: /tmp/ffconf.mFD3hqi5.o uses variable-size enums yet the output is to use 32-bit enums; use of enum values across objects may fail
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/../lib/gcc/arm-eabi/4.4.0/../../../../arm-eabi/bin/ld: warning: cannot find entry symbol _start; defaulting to 00008348
+check_func getaddrinfo
+check_ld
+check_cc
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	extern int getaddrinfo();
+    2	int main(void){ getaddrinfo(); }
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -c -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -Wl,-T,/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/arm-eabi/lib/ldscripts/armelf.x -Wl,-rpath-link=/home/uday/mount/android-ndk-r4b/build/platforms/android-8/arch-arm/usr/lib -L/home/uday/mount/android-ndk-r4b/build/platforms/android-8/arch-arm/usr/lib -nostdlib /home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/lib/gcc/arm-eabi/4.4.0/crtbegin.o /home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/lib/gcc/arm-eabi/4.4.0/crtend.o -lc -lm -ldl -o /tmp/ffconf.3FKKHVsK /tmp/ffconf.mFD3hqi5.o
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/../lib/gcc/arm-eabi/4.4.0/../../../../arm-eabi/bin/ld: warning: /tmp/ffconf.mFD3hqi5.o uses variable-size enums yet the output is to use 32-bit enums; use of enum values across objects may fail
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/../lib/gcc/arm-eabi/4.4.0/../../../../arm-eabi/bin/ld: warning: cannot find entry symbol _start; defaulting to 00008350
+check_func gethrtime
+check_ld
+check_cc
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	extern int gethrtime();
+    2	int main(void){ gethrtime(); }
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -c -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -Wl,-T,/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/arm-eabi/lib/ldscripts/armelf.x -Wl,-rpath-link=/home/uday/mount/android-ndk-r4b/build/platforms/android-8/arch-arm/usr/lib -L/home/uday/mount/android-ndk-r4b/build/platforms/android-8/arch-arm/usr/lib -nostdlib /home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/lib/gcc/arm-eabi/4.4.0/crtbegin.o /home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/lib/gcc/arm-eabi/4.4.0/crtend.o -lc -lm -ldl -o /tmp/ffconf.3FKKHVsK /tmp/ffconf.mFD3hqi5.o
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/../lib/gcc/arm-eabi/4.4.0/../../../../arm-eabi/bin/ld: warning: /tmp/ffconf.mFD3hqi5.o uses variable-size enums yet the output is to use 32-bit enums; use of enum values across objects may fail
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/../lib/gcc/arm-eabi/4.4.0/../../../../arm-eabi/bin/ld: warning: cannot find entry symbol _start; defaulting to 00008350
+/tmp/ffconf.mFD3hqi5.o: In function `main':
+ffconf.7gpjoHZK.c:(.text+0x4): undefined reference to `gethrtime'
+collect2: ld returned 1 exit status
+check_func getrusage
+check_ld
+check_cc
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	extern int getrusage();
+    2	int main(void){ getrusage(); }
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -c -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -Wl,-T,/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/arm-eabi/lib/ldscripts/armelf.x -Wl,-rpath-link=/home/uday/mount/android-ndk-r4b/build/platforms/android-8/arch-arm/usr/lib -L/home/uday/mount/android-ndk-r4b/build/platforms/android-8/arch-arm/usr/lib -nostdlib /home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/lib/gcc/arm-eabi/4.4.0/crtbegin.o /home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/lib/gcc/arm-eabi/4.4.0/crtend.o -lc -lm -ldl -o /tmp/ffconf.3FKKHVsK /tmp/ffconf.mFD3hqi5.o
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/../lib/gcc/arm-eabi/4.4.0/../../../../arm-eabi/bin/ld: warning: /tmp/ffconf.mFD3hqi5.o uses variable-size enums yet the output is to use 32-bit enums; use of enum values across objects may fail
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/../lib/gcc/arm-eabi/4.4.0/../../../../arm-eabi/bin/ld: warning: cannot find entry symbol _start; defaulting to 00008350
+check_type sys/time.h sys/resource.h struct rusage ru_maxrss
+check_cc
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	
+    2	#include <sys/time.h>
+    3	#include <sys/resource.h>
+    4	const void *p = &((struct rusage *)0)->ru_maxrss;
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -c -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+/tmp/ffconf.7gpjoHZK.c:2:22: error: sys/time.h: No such file or directory
+/tmp/ffconf.7gpjoHZK.c:3:26: error: sys/resource.h: No such file or directory
+/tmp/ffconf.7gpjoHZK.c:4: error: dereferencing pointer to incomplete type
+check_func inet_aton
+check_ld
+check_cc
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	extern int inet_aton();
+    2	int main(void){ inet_aton(); }
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -c -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -Wl,-T,/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/arm-eabi/lib/ldscripts/armelf.x -Wl,-rpath-link=/home/uday/mount/android-ndk-r4b/build/platforms/android-8/arch-arm/usr/lib -L/home/uday/mount/android-ndk-r4b/build/platforms/android-8/arch-arm/usr/lib -nostdlib /home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/lib/gcc/arm-eabi/4.4.0/crtbegin.o /home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/lib/gcc/arm-eabi/4.4.0/crtend.o -lc -lm -ldl -o /tmp/ffconf.3FKKHVsK /tmp/ffconf.mFD3hqi5.o
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/../lib/gcc/arm-eabi/4.4.0/../../../../arm-eabi/bin/ld: warning: /tmp/ffconf.mFD3hqi5.o uses variable-size enums yet the output is to use 32-bit enums; use of enum values across objects may fail
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/../lib/gcc/arm-eabi/4.4.0/../../../../arm-eabi/bin/ld: warning: cannot find entry symbol _start; defaulting to 00008350
+check_func isatty
+check_ld
+check_cc
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	extern int isatty();
+    2	int main(void){ isatty(); }
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -c -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -Wl,-T,/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/arm-eabi/lib/ldscripts/armelf.x -Wl,-rpath-link=/home/uday/mount/android-ndk-r4b/build/platforms/android-8/arch-arm/usr/lib -L/home/uday/mount/android-ndk-r4b/build/platforms/android-8/arch-arm/usr/lib -nostdlib /home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/lib/gcc/arm-eabi/4.4.0/crtbegin.o /home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/lib/gcc/arm-eabi/4.4.0/crtend.o -lc -lm -ldl -o /tmp/ffconf.3FKKHVsK /tmp/ffconf.mFD3hqi5.o
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/../lib/gcc/arm-eabi/4.4.0/../../../../arm-eabi/bin/ld: warning: /tmp/ffconf.mFD3hqi5.o uses variable-size enums yet the output is to use 32-bit enums; use of enum values across objects may fail
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/../lib/gcc/arm-eabi/4.4.0/../../../../arm-eabi/bin/ld: warning: cannot find entry symbol _start; defaulting to 0000834c
+check_func memalign
+check_ld
+check_cc
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	extern int memalign();
+    2	int main(void){ memalign(); }
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -c -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -Wl,-T,/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/arm-eabi/lib/ldscripts/armelf.x -Wl,-rpath-link=/home/uday/mount/android-ndk-r4b/build/platforms/android-8/arch-arm/usr/lib -L/home/uday/mount/android-ndk-r4b/build/platforms/android-8/arch-arm/usr/lib -nostdlib /home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/lib/gcc/arm-eabi/4.4.0/crtbegin.o /home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/lib/gcc/arm-eabi/4.4.0/crtend.o -lc -lm -ldl -o /tmp/ffconf.3FKKHVsK /tmp/ffconf.mFD3hqi5.o
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/../lib/gcc/arm-eabi/4.4.0/../../../../arm-eabi/bin/ld: warning: /tmp/ffconf.mFD3hqi5.o uses variable-size enums yet the output is to use 32-bit enums; use of enum values across objects may fail
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/../lib/gcc/arm-eabi/4.4.0/../../../../arm-eabi/bin/ld: warning: cannot find entry symbol _start; defaulting to 0000834c
+check_func mkstemp
+check_ld
+check_cc
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	extern int mkstemp();
+    2	int main(void){ mkstemp(); }
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -c -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -Wl,-T,/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/arm-eabi/lib/ldscripts/armelf.x -Wl,-rpath-link=/home/uday/mount/android-ndk-r4b/build/platforms/android-8/arch-arm/usr/lib -L/home/uday/mount/android-ndk-r4b/build/platforms/android-8/arch-arm/usr/lib -nostdlib /home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/lib/gcc/arm-eabi/4.4.0/crtbegin.o /home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/lib/gcc/arm-eabi/4.4.0/crtend.o -lc -lm -ldl -o /tmp/ffconf.3FKKHVsK /tmp/ffconf.mFD3hqi5.o
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/../lib/gcc/arm-eabi/4.4.0/../../../../arm-eabi/bin/ld: warning: /tmp/ffconf.mFD3hqi5.o uses variable-size enums yet the output is to use 32-bit enums; use of enum values across objects may fail
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/../lib/gcc/arm-eabi/4.4.0/../../../../arm-eabi/bin/ld: warning: cannot find entry symbol _start; defaulting to 0000834c
+check_func posix_memalign
+check_ld
+check_cc
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	extern int posix_memalign();
+    2	int main(void){ posix_memalign(); }
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -c -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -Wl,-T,/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/arm-eabi/lib/ldscripts/armelf.x -Wl,-rpath-link=/home/uday/mount/android-ndk-r4b/build/platforms/android-8/arch-arm/usr/lib -L/home/uday/mount/android-ndk-r4b/build/platforms/android-8/arch-arm/usr/lib -nostdlib /home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/lib/gcc/arm-eabi/4.4.0/crtbegin.o /home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/lib/gcc/arm-eabi/4.4.0/crtend.o -lc -lm -ldl -o /tmp/ffconf.3FKKHVsK /tmp/ffconf.mFD3hqi5.o
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/../lib/gcc/arm-eabi/4.4.0/../../../../arm-eabi/bin/ld: warning: /tmp/ffconf.mFD3hqi5.o uses variable-size enums yet the output is to use 32-bit enums; use of enum values across objects may fail
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/../lib/gcc/arm-eabi/4.4.0/../../../../arm-eabi/bin/ld: warning: cannot find entry symbol _start; defaulting to 00008354
+/tmp/ffconf.mFD3hqi5.o: In function `main':
+ffconf.7gpjoHZK.c:(.text+0x4): undefined reference to `posix_memalign'
+collect2: ld returned 1 exit status
+check_func setrlimit
+check_ld
+check_cc
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	extern int setrlimit();
+    2	int main(void){ setrlimit(); }
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -c -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -Wl,-T,/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/arm-eabi/lib/ldscripts/armelf.x -Wl,-rpath-link=/home/uday/mount/android-ndk-r4b/build/platforms/android-8/arch-arm/usr/lib -L/home/uday/mount/android-ndk-r4b/build/platforms/android-8/arch-arm/usr/lib -nostdlib /home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/lib/gcc/arm-eabi/4.4.0/crtbegin.o /home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/lib/gcc/arm-eabi/4.4.0/crtend.o -lc -lm -ldl -o /tmp/ffconf.3FKKHVsK /tmp/ffconf.mFD3hqi5.o
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/../lib/gcc/arm-eabi/4.4.0/../../../../arm-eabi/bin/ld: warning: /tmp/ffconf.mFD3hqi5.o uses variable-size enums yet the output is to use 32-bit enums; use of enum values across objects may fail
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/../lib/gcc/arm-eabi/4.4.0/../../../../arm-eabi/bin/ld: warning: cannot find entry symbol _start; defaulting to 00008350
+check_func strerror_r
+check_ld
+check_cc
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	extern int strerror_r();
+    2	int main(void){ strerror_r(); }
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -c -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -Wl,-T,/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/arm-eabi/lib/ldscripts/armelf.x -Wl,-rpath-link=/home/uday/mount/android-ndk-r4b/build/platforms/android-8/arch-arm/usr/lib -L/home/uday/mount/android-ndk-r4b/build/platforms/android-8/arch-arm/usr/lib -nostdlib /home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/lib/gcc/arm-eabi/4.4.0/crtbegin.o /home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/lib/gcc/arm-eabi/4.4.0/crtend.o -lc -lm -ldl -o /tmp/ffconf.3FKKHVsK /tmp/ffconf.mFD3hqi5.o
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/../lib/gcc/arm-eabi/4.4.0/../../../../arm-eabi/bin/ld: warning: /tmp/ffconf.mFD3hqi5.o uses variable-size enums yet the output is to use 32-bit enums; use of enum values across objects may fail
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/../lib/gcc/arm-eabi/4.4.0/../../../../arm-eabi/bin/ld: warning: cannot find entry symbol _start; defaulting to 00008350
+check_func_headers io.h setmode
+check_ld
+check_cc
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	
+    2	#include <io.h>
+    3	int main(int argc, char **argv){
+    4	    return (long) setmode;
+    5	}
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -c -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+/tmp/ffconf.7gpjoHZK.c:2:16: error: io.h: No such file or directory
+/tmp/ffconf.7gpjoHZK.c: In function 'main':
+/tmp/ffconf.7gpjoHZK.c:4: error: 'setmode' undeclared (first use in this function)
+/tmp/ffconf.7gpjoHZK.c:4: error: (Each undeclared identifier is reported only once
+/tmp/ffconf.7gpjoHZK.c:4: error: for each function it appears in.)
+check_func_headers lzo/lzo1x.h lzo1x_999_compress
+check_ld
+check_cc
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	
+    2	#include <lzo/lzo1x.h>
+    3	int main(int argc, char **argv){
+    4	    return (long) lzo1x_999_compress;
+    5	}
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -c -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+/tmp/ffconf.7gpjoHZK.c:2:23: error: lzo/lzo1x.h: No such file or directory
+/tmp/ffconf.7gpjoHZK.c: In function 'main':
+/tmp/ffconf.7gpjoHZK.c:4: error: 'lzo1x_999_compress' undeclared (first use in this function)
+/tmp/ffconf.7gpjoHZK.c:4: error: (Each undeclared identifier is reported only once
+/tmp/ffconf.7gpjoHZK.c:4: error: for each function it appears in.)
+check_lib2 windows.h psapi.h GetProcessMemoryInfo -lpsapi
+check_func_headers windows.h psapi.h GetProcessMemoryInfo -lpsapi
+check_ld -lpsapi
+check_cc
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	
+    2	#include <windows.h>
+    3	#include <psapi.h>
+    4	int main(int argc, char **argv){
+    5	    return (long) GetProcessMemoryInfo;
+    6	}
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -c -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+/tmp/ffconf.7gpjoHZK.c:2:21: error: windows.h: No such file or directory
+/tmp/ffconf.7gpjoHZK.c:3:19: error: psapi.h: No such file or directory
+/tmp/ffconf.7gpjoHZK.c: In function 'main':
+/tmp/ffconf.7gpjoHZK.c:5: error: 'GetProcessMemoryInfo' undeclared (first use in this function)
+/tmp/ffconf.7gpjoHZK.c:5: error: (Each undeclared identifier is reported only once
+/tmp/ffconf.7gpjoHZK.c:5: error: for each function it appears in.)
+check_func_headers windows.h GetProcessTimes
+check_ld
+check_cc
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	
+    2	#include <windows.h>
+    3	int main(int argc, char **argv){
+    4	    return (long) GetProcessTimes;
+    5	}
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -c -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+/tmp/ffconf.7gpjoHZK.c:2:21: error: windows.h: No such file or directory
+/tmp/ffconf.7gpjoHZK.c: In function 'main':
+/tmp/ffconf.7gpjoHZK.c:4: error: 'GetProcessTimes' undeclared (first use in this function)
+/tmp/ffconf.7gpjoHZK.c:4: error: (Each undeclared identifier is reported only once
+/tmp/ffconf.7gpjoHZK.c:4: error: for each function it appears in.)
+check_func_headers windows.h VirtualAlloc
+check_ld
+check_cc
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	
+    2	#include <windows.h>
+    3	int main(int argc, char **argv){
+    4	    return (long) VirtualAlloc;
+    5	}
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -c -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+/tmp/ffconf.7gpjoHZK.c:2:21: error: windows.h: No such file or directory
+/tmp/ffconf.7gpjoHZK.c: In function 'main':
+/tmp/ffconf.7gpjoHZK.c:4: error: 'VirtualAlloc' undeclared (first use in this function)
+/tmp/ffconf.7gpjoHZK.c:4: error: (Each undeclared identifier is reported only once
+/tmp/ffconf.7gpjoHZK.c:4: error: for each function it appears in.)
+check_header conio.h
+check_cpp
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	#include <conio.h>
+    2	int x;
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -E -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+/tmp/ffconf.7gpjoHZK.c:1:19: error: conio.h: No such file or directory
+check_header dlfcn.h
+check_cpp
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	#include <dlfcn.h>
+    2	int x;
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -E -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+/tmp/ffconf.7gpjoHZK.c:1:19: error: dlfcn.h: No such file or directory
+check_header dxva2api.h
+check_cpp
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	#include <dxva2api.h>
+    2	int x;
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -E -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+/tmp/ffconf.7gpjoHZK.c:1:22: error: dxva2api.h: No such file or directory
+check_header malloc.h
+check_cpp
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	#include <malloc.h>
+    2	int x;
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -E -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+/tmp/ffconf.7gpjoHZK.c:1:20: error: malloc.h: No such file or directory
+check_header poll.h
+check_cpp
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	#include <poll.h>
+    2	int x;
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -E -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+/tmp/ffconf.7gpjoHZK.c:1:18: error: poll.h: No such file or directory
+check_header sys/mman.h
+check_cpp
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	#include <sys/mman.h>
+    2	int x;
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -E -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+/tmp/ffconf.7gpjoHZK.c:1:22: error: sys/mman.h: No such file or directory
+check_header sys/resource.h
+check_cpp
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	#include <sys/resource.h>
+    2	int x;
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -E -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+/tmp/ffconf.7gpjoHZK.c:1:26: error: sys/resource.h: No such file or directory
+check_header sys/select.h
+check_cpp
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	#include <sys/select.h>
+    2	int x;
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -E -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+/tmp/ffconf.7gpjoHZK.c:1:24: error: sys/select.h: No such file or directory
+check_header termios.h
+check_cpp
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	#include <termios.h>
+    2	int x;
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -E -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+/tmp/ffconf.7gpjoHZK.c:1:21: error: termios.h: No such file or directory
+check_header vdpau/vdpau.h
+check_cpp
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	#include <vdpau/vdpau.h>
+    2	int x;
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -E -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+/tmp/ffconf.7gpjoHZK.c:1:25: error: vdpau/vdpau.h: No such file or directory
+check_header vdpau/vdpau_x11.h
+check_cpp
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	#include <vdpau/vdpau_x11.h>
+    2	int x;
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -E -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+/tmp/ffconf.7gpjoHZK.c:1:29: error: vdpau/vdpau_x11.h: No such file or directory
+check_header X11/extensions/XvMClib.h
+check_cpp
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	#include <X11/extensions/XvMClib.h>
+    2	int x;
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -E -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+/tmp/ffconf.7gpjoHZK.c:1:36: error: X11/extensions/XvMClib.h: No such file or directory
+check_type dxva2api.h DXVA_PictureParameters wDecodedPictureIndex
+check_cc
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	
+    2	#include <dxva2api.h>
+    3	const void *p = &((DXVA_PictureParameters *)0)->wDecodedPictureIndex;
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -c -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+/tmp/ffconf.7gpjoHZK.c:2:22: error: dxva2api.h: No such file or directory
+/tmp/ffconf.7gpjoHZK.c:3: error: 'DXVA_PictureParameters' undeclared here (not in a function)
+/tmp/ffconf.7gpjoHZK.c:3: error: expected expression before ')' token
+check_lib zlib.h zlibVersion -lz
+check_header zlib.h
+check_cpp
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	#include <zlib.h>
+    2	int x;
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -E -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+/tmp/ffconf.7gpjoHZK.c:1:18: error: zlib.h: No such file or directory
+check_lib2 bzlib.h BZ2_bzlibVersion -lbz2
+check_func_headers bzlib.h BZ2_bzlibVersion -lbz2
+check_ld -lbz2
+check_cc
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	
+    2	#include <bzlib.h>
+    3	int main(int argc, char **argv){
+    4	    return (long) BZ2_bzlibVersion;
+    5	}
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -c -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+/tmp/ffconf.7gpjoHZK.c:2:19: error: bzlib.h: No such file or directory
+/tmp/ffconf.7gpjoHZK.c: In function 'main':
+/tmp/ffconf.7gpjoHZK.c:4: error: 'BZ2_bzlibVersion' undeclared (first use in this function)
+/tmp/ffconf.7gpjoHZK.c:4: error: (Each undeclared identifier is reported only once
+/tmp/ffconf.7gpjoHZK.c:4: error: for each function it appears in.)
+check_lib math.h sin -lm
+check_header math.h
+check_cpp
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	#include <math.h>
+    2	int x;
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -E -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+/tmp/ffconf.7gpjoHZK.c:1:18: error: math.h: No such file or directory
+check_lib va/va.h vaInitialize -lva
+check_header va/va.h
+check_cpp
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	#include <va/va.h>
+    2	int x;
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -E -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+/tmp/ffconf.7gpjoHZK.c:1:19: error: va/va.h: No such file or directory
+check_mathfunc exp2
+check_ld
+check_cc
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	#include <math.h>
+    2	float foo(float f) { return exp2(f); }
+    3	int main(void){ return 0; }
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -c -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+/tmp/ffconf.7gpjoHZK.c:1:18: error: math.h: No such file or directory
+/tmp/ffconf.7gpjoHZK.c: In function 'foo':
+/tmp/ffconf.7gpjoHZK.c:2: warning: implicit declaration of function 'exp2'
+/tmp/ffconf.7gpjoHZK.c:2: warning: incompatible implicit declaration of built-in function 'exp2'
+check_mathfunc exp2f
+check_ld
+check_cc
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	#include <math.h>
+    2	float foo(float f) { return exp2f(f); }
+    3	int main(void){ return 0; }
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -c -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+/tmp/ffconf.7gpjoHZK.c:1:18: error: math.h: No such file or directory
+/tmp/ffconf.7gpjoHZK.c: In function 'foo':
+/tmp/ffconf.7gpjoHZK.c:2: warning: implicit declaration of function 'exp2f'
+/tmp/ffconf.7gpjoHZK.c:2: warning: incompatible implicit declaration of built-in function 'exp2f'
+check_mathfunc llrint
+check_ld
+check_cc
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	#include <math.h>
+    2	float foo(float f) { return llrint(f); }
+    3	int main(void){ return 0; }
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -c -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+/tmp/ffconf.7gpjoHZK.c:1:18: error: math.h: No such file or directory
+/tmp/ffconf.7gpjoHZK.c: In function 'foo':
+/tmp/ffconf.7gpjoHZK.c:2: warning: implicit declaration of function 'llrint'
+/tmp/ffconf.7gpjoHZK.c:2: warning: incompatible implicit declaration of built-in function 'llrint'
+check_mathfunc llrintf
+check_ld
+check_cc
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	#include <math.h>
+    2	float foo(float f) { return llrintf(f); }
+    3	int main(void){ return 0; }
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -c -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+/tmp/ffconf.7gpjoHZK.c:1:18: error: math.h: No such file or directory
+/tmp/ffconf.7gpjoHZK.c: In function 'foo':
+/tmp/ffconf.7gpjoHZK.c:2: warning: implicit declaration of function 'llrintf'
+/tmp/ffconf.7gpjoHZK.c:2: warning: incompatible implicit declaration of built-in function 'llrintf'
+check_mathfunc log2
+check_ld
+check_cc
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	#include <math.h>
+    2	float foo(float f) { return log2(f); }
+    3	int main(void){ return 0; }
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -c -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+/tmp/ffconf.7gpjoHZK.c:1:18: error: math.h: No such file or directory
+/tmp/ffconf.7gpjoHZK.c: In function 'foo':
+/tmp/ffconf.7gpjoHZK.c:2: warning: implicit declaration of function 'log2'
+/tmp/ffconf.7gpjoHZK.c:2: warning: incompatible implicit declaration of built-in function 'log2'
+check_mathfunc log2f
+check_ld
+check_cc
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	#include <math.h>
+    2	float foo(float f) { return log2f(f); }
+    3	int main(void){ return 0; }
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -c -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+/tmp/ffconf.7gpjoHZK.c:1:18: error: math.h: No such file or directory
+/tmp/ffconf.7gpjoHZK.c: In function 'foo':
+/tmp/ffconf.7gpjoHZK.c:2: warning: implicit declaration of function 'log2f'
+/tmp/ffconf.7gpjoHZK.c:2: warning: incompatible implicit declaration of built-in function 'log2f'
+check_mathfunc lrint
+check_ld
+check_cc
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	#include <math.h>
+    2	float foo(float f) { return lrint(f); }
+    3	int main(void){ return 0; }
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -c -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+/tmp/ffconf.7gpjoHZK.c:1:18: error: math.h: No such file or directory
+/tmp/ffconf.7gpjoHZK.c: In function 'foo':
+/tmp/ffconf.7gpjoHZK.c:2: warning: implicit declaration of function 'lrint'
+/tmp/ffconf.7gpjoHZK.c:2: warning: incompatible implicit declaration of built-in function 'lrint'
+check_mathfunc lrintf
+check_ld
+check_cc
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	#include <math.h>
+    2	float foo(float f) { return lrintf(f); }
+    3	int main(void){ return 0; }
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -c -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+/tmp/ffconf.7gpjoHZK.c:1:18: error: math.h: No such file or directory
+/tmp/ffconf.7gpjoHZK.c: In function 'foo':
+/tmp/ffconf.7gpjoHZK.c:2: warning: implicit declaration of function 'lrintf'
+/tmp/ffconf.7gpjoHZK.c:2: warning: incompatible implicit declaration of built-in function 'lrintf'
+check_mathfunc round
+check_ld
+check_cc
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	#include <math.h>
+    2	float foo(float f) { return round(f); }
+    3	int main(void){ return 0; }
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -c -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+/tmp/ffconf.7gpjoHZK.c:1:18: error: math.h: No such file or directory
+/tmp/ffconf.7gpjoHZK.c: In function 'foo':
+/tmp/ffconf.7gpjoHZK.c:2: warning: implicit declaration of function 'round'
+/tmp/ffconf.7gpjoHZK.c:2: warning: incompatible implicit declaration of built-in function 'round'
+check_mathfunc roundf
+check_ld
+check_cc
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	#include <math.h>
+    2	float foo(float f) { return roundf(f); }
+    3	int main(void){ return 0; }
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -c -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+/tmp/ffconf.7gpjoHZK.c:1:18: error: math.h: No such file or directory
+/tmp/ffconf.7gpjoHZK.c: In function 'foo':
+/tmp/ffconf.7gpjoHZK.c:2: warning: implicit declaration of function 'roundf'
+/tmp/ffconf.7gpjoHZK.c:2: warning: incompatible implicit declaration of built-in function 'roundf'
+check_mathfunc truncf
+check_ld
+check_cc
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	#include <math.h>
+    2	float foo(float f) { return truncf(f); }
+    3	int main(void){ return 0; }
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -c -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+/tmp/ffconf.7gpjoHZK.c:1:18: error: math.h: No such file or directory
+/tmp/ffconf.7gpjoHZK.c: In function 'foo':
+/tmp/ffconf.7gpjoHZK.c:2: warning: implicit declaration of function 'truncf'
+/tmp/ffconf.7gpjoHZK.c:2: warning: incompatible implicit declaration of built-in function 'truncf'
+check_header linux/videodev.h
+check_cpp
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	#include <linux/videodev.h>
+    2	int x;
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -E -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+/tmp/ffconf.7gpjoHZK.c:1:28: error: linux/videodev.h: No such file or directory
+check_header linux/videodev2.h
+check_cpp
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	#include <linux/videodev2.h>
+    2	int x;
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -E -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+/tmp/ffconf.7gpjoHZK.c:1:29: error: linux/videodev2.h: No such file or directory
+check_header sys/videoio.h
+check_cpp
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	#include <sys/videoio.h>
+    2	int x;
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -E -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+/tmp/ffconf.7gpjoHZK.c:1:25: error: sys/videoio.h: No such file or directory
+check_func_headers windows.h vfw.h capCreateCaptureWindow -lavicap32
+check_ld -lavicap32
+check_cc
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	
+    2	#include <windows.h>
+    3	#include <vfw.h>
+    4	int main(int argc, char **argv){
+    5	    return (long) capCreateCaptureWindow;
+    6	}
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -c -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+/tmp/ffconf.7gpjoHZK.c:2:21: error: windows.h: No such file or directory
+/tmp/ffconf.7gpjoHZK.c:3:17: error: vfw.h: No such file or directory
+/tmp/ffconf.7gpjoHZK.c: In function 'main':
+/tmp/ffconf.7gpjoHZK.c:5: error: 'capCreateCaptureWindow' undeclared (first use in this function)
+/tmp/ffconf.7gpjoHZK.c:5: error: (Each undeclared identifier is reported only once
+/tmp/ffconf.7gpjoHZK.c:5: error: for each function it appears in.)
+check_header dev/bktr/ioctl_meteor.h
+check_cpp
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	#include <dev/bktr/ioctl_meteor.h>
+    2	int x;
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -E -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+/tmp/ffconf.7gpjoHZK.c:1:35: error: dev/bktr/ioctl_meteor.h: No such file or directory
+check_header machine/ioctl_meteor.h
+check_cpp
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	#include <machine/ioctl_meteor.h>
+    2	int x;
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -E -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+/tmp/ffconf.7gpjoHZK.c:1:34: error: machine/ioctl_meteor.h: No such file or directory
+check_header dev/video/meteor/ioctl_meteor.h
+check_cpp
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	#include <dev/video/meteor/ioctl_meteor.h>
+    2	int x;
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -E -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+/tmp/ffconf.7gpjoHZK.c:1:43: error: dev/video/meteor/ioctl_meteor.h: No such file or directory
+check_header dev/ic/bt8xx.h
+check_cpp
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	#include <dev/ic/bt8xx.h>
+    2	int x;
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -E -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+/tmp/ffconf.7gpjoHZK.c:1:26: error: dev/ic/bt8xx.h: No such file or directory
+check_header sys/soundcard.h
+check_cpp
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	#include <sys/soundcard.h>
+    2	int x;
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -E -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+/tmp/ffconf.7gpjoHZK.c:1:27: error: sys/soundcard.h: No such file or directory
+check_header soundcard.h
+check_cpp
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	#include <soundcard.h>
+    2	int x;
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -E -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+/tmp/ffconf.7gpjoHZK.c:1:23: error: soundcard.h: No such file or directory
+check_cflags -Wdeclaration-after-statement
+check_cc -Wdeclaration-after-statement
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	int x;
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -g -Wdeclaration-after-statement -c -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+check_cflags -Wall
+check_cc -Wall
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	int x;
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -g -Wdeclaration-after-statement -Wall -c -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+check_cflags -Wno-switch
+check_cc -Wno-switch
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	int x;
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -g -Wdeclaration-after-statement -Wall -Wno-switch -c -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+check_cflags -Wdisabled-optimization
+check_cc -Wdisabled-optimization
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	int x;
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -g -Wdeclaration-after-statement -Wall -Wno-switch -Wdisabled-optimization -c -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+check_cflags -Wpointer-arith
+check_cc -Wpointer-arith
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	int x;
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -g -Wdeclaration-after-statement -Wall -Wno-switch -Wdisabled-optimization -Wpointer-arith -c -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+check_cflags -Wredundant-decls
+check_cc -Wredundant-decls
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	int x;
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -g -Wdeclaration-after-statement -Wall -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -c -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+check_cflags -Wno-pointer-sign
+check_cc -Wno-pointer-sign
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	int x;
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -g -Wdeclaration-after-statement -Wall -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -c -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+check_cflags -Wcast-qual
+check_cc -Wcast-qual
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	int x;
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -g -Wdeclaration-after-statement -Wall -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -Wcast-qual -c -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+check_cflags -Wwrite-strings
+check_cc -Wwrite-strings
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	int x;
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -g -Wdeclaration-after-statement -Wall -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -Wcast-qual -Wwrite-strings -c -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+check_cflags -Wtype-limits
+check_cc -Wtype-limits
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	int x;
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -g -Wdeclaration-after-statement -Wall -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -Wcast-qual -Wwrite-strings -Wtype-limits -c -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+check_cflags -Wundef
+check_cc -Wundef
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	int x;
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -g -Wdeclaration-after-statement -Wall -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -Wcast-qual -Wwrite-strings -Wtype-limits -Wundef -c -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+check_cflags -Wmissing-prototypes
+check_cc -Wmissing-prototypes
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	int x;
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -g -Wdeclaration-after-statement -Wall -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -Wcast-qual -Wwrite-strings -Wtype-limits -Wundef -Wmissing-prototypes -c -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+check_ldflags -Wl,--warn-common
+test_ldflags -Wl,--warn-common
+check_ld -Wl,--warn-common
+check_cc -Wl,--warn-common
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	int main(void){ return 0; }
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -g -Wdeclaration-after-statement -Wall -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -Wcast-qual -Wwrite-strings -Wtype-limits -Wundef -Wmissing-prototypes -Wl,--warn-common -c -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -Wl,-T,/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/arm-eabi/lib/ldscripts/armelf.x -Wl,-rpath-link=/home/uday/mount/android-ndk-r4b/build/platforms/android-8/arch-arm/usr/lib -L/home/uday/mount/android-ndk-r4b/build/platforms/android-8/arch-arm/usr/lib -nostdlib /home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/lib/gcc/arm-eabi/4.4.0/crtbegin.o /home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/lib/gcc/arm-eabi/4.4.0/crtend.o -lc -lm -ldl -Wl,--warn-common -o /tmp/ffconf.3FKKHVsK /tmp/ffconf.mFD3hqi5.o
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/../lib/gcc/arm-eabi/4.4.0/../../../../arm-eabi/bin/ld: warning: /tmp/ffconf.mFD3hqi5.o uses variable-size enums yet the output is to use 32-bit enums; use of enum values across objects may fail
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/../lib/gcc/arm-eabi/4.4.0/../../../../arm-eabi/bin/ld: warning: cannot find entry symbol _start; defaulting to 0000831c
+check_ldflags -Wl,--as-needed
+test_ldflags -Wl,--as-needed
+check_ld -Wl,--as-needed
+check_cc -Wl,--as-needed
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	int main(void){ return 0; }
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -g -Wdeclaration-after-statement -Wall -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -Wcast-qual -Wwrite-strings -Wtype-limits -Wundef -Wmissing-prototypes -Wl,--as-needed -c -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -Wl,-T,/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/arm-eabi/lib/ldscripts/armelf.x -Wl,-rpath-link=/home/uday/mount/android-ndk-r4b/build/platforms/android-8/arch-arm/usr/lib -L/home/uday/mount/android-ndk-r4b/build/platforms/android-8/arch-arm/usr/lib -nostdlib /home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/lib/gcc/arm-eabi/4.4.0/crtbegin.o /home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/lib/gcc/arm-eabi/4.4.0/crtend.o -lc -lm -ldl -Wl,--warn-common -Wl,--as-needed -o /tmp/ffconf.3FKKHVsK /tmp/ffconf.mFD3hqi5.o
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/../lib/gcc/arm-eabi/4.4.0/../../../../arm-eabi/bin/ld: warning: /tmp/ffconf.mFD3hqi5.o uses variable-size enums yet the output is to use 32-bit enums; use of enum values across objects may fail
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/../lib/gcc/arm-eabi/4.4.0/../../../../arm-eabi/bin/ld: warning: cannot find entry symbol _start; defaulting to 0000831c
+check_ldflags -Wl,-rpath-link,\$(BUILD_ROOT)/libpostproc -Wl,-rpath-link,\$(BUILD_ROOT)/libswscale -Wl,-rpath-link,\$(BUILD_ROOT)/libavfilter -Wl,-rpath-link,\$(BUILD_ROOT)/libavdevice -Wl,-rpath-link,\$(BUILD_ROOT)/libavformat -Wl,-rpath-link,\$(BUILD_ROOT)/libavcodec -Wl,-rpath-link,\$(BUILD_ROOT)/libavutil
+test_ldflags -Wl,-rpath-link,\$(BUILD_ROOT)/libpostproc -Wl,-rpath-link,\$(BUILD_ROOT)/libswscale -Wl,-rpath-link,\$(BUILD_ROOT)/libavfilter -Wl,-rpath-link,\$(BUILD_ROOT)/libavdevice -Wl,-rpath-link,\$(BUILD_ROOT)/libavformat -Wl,-rpath-link,\$(BUILD_ROOT)/libavcodec -Wl,-rpath-link,\$(BUILD_ROOT)/libavutil
+check_ld -Wl,-rpath-link,\$(BUILD_ROOT)/libpostproc -Wl,-rpath-link,\$(BUILD_ROOT)/libswscale -Wl,-rpath-link,\$(BUILD_ROOT)/libavfilter -Wl,-rpath-link,\$(BUILD_ROOT)/libavdevice -Wl,-rpath-link,\$(BUILD_ROOT)/libavformat -Wl,-rpath-link,\$(BUILD_ROOT)/libavcodec -Wl,-rpath-link,\$(BUILD_ROOT)/libavutil
+check_cc -Wl,-rpath-link,\$(BUILD_ROOT)/libpostproc -Wl,-rpath-link,\$(BUILD_ROOT)/libswscale -Wl,-rpath-link,\$(BUILD_ROOT)/libavfilter -Wl,-rpath-link,\$(BUILD_ROOT)/libavdevice -Wl,-rpath-link,\$(BUILD_ROOT)/libavformat -Wl,-rpath-link,\$(BUILD_ROOT)/libavcodec -Wl,-rpath-link,\$(BUILD_ROOT)/libavutil
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	int main(void){ return 0; }
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -g -Wdeclaration-after-statement -Wall -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -Wcast-qual -Wwrite-strings -Wtype-limits -Wundef -Wmissing-prototypes -Wl,-rpath-link,\$(BUILD_ROOT)/libpostproc -Wl,-rpath-link,\$(BUILD_ROOT)/libswscale -Wl,-rpath-link,\$(BUILD_ROOT)/libavfilter -Wl,-rpath-link,\$(BUILD_ROOT)/libavdevice -Wl,-rpath-link,\$(BUILD_ROOT)/libavformat -Wl,-rpath-link,\$(BUILD_ROOT)/libavcodec -Wl,-rpath-link,\$(BUILD_ROOT)/libavutil -c -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -Wl,-T,/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/arm-eabi/lib/ldscripts/armelf.x -Wl,-rpath-link=/home/uday/mount/android-ndk-r4b/build/platforms/android-8/arch-arm/usr/lib -L/home/uday/mount/android-ndk-r4b/build/platforms/android-8/arch-arm/usr/lib -nostdlib /home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/lib/gcc/arm-eabi/4.4.0/crtbegin.o /home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/lib/gcc/arm-eabi/4.4.0/crtend.o -lc -lm -ldl -Wl,--warn-common -Wl,--as-needed -Wl,-rpath-link,\$(BUILD_ROOT)/libpostproc -Wl,-rpath-link,\$(BUILD_ROOT)/libswscale -Wl,-rpath-link,\$(BUILD_ROOT)/libavfilter -Wl,-rpath-link,\$(BUILD_ROOT)/libavdevice -Wl,-rpath-link,\$(BUILD_ROOT)/libavformat -Wl,-rpath-link,\$(BUILD_ROOT)/libavcodec -Wl,-rpath-link,\$(BUILD_ROOT)/libavutil -o /tmp/ffconf.3FKKHVsK /tmp/ffconf.mFD3hqi5.o
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/../lib/gcc/arm-eabi/4.4.0/../../../../arm-eabi/bin/ld: warning: /tmp/ffconf.mFD3hqi5.o uses variable-size enums yet the output is to use 32-bit enums; use of enum values across objects may fail
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/../lib/gcc/arm-eabi/4.4.0/../../../../arm-eabi/bin/ld: warning: cannot find entry symbol _start; defaulting to 0000831c
+check_ldflags -Wl,-Bsymbolic
+test_ldflags -Wl,-Bsymbolic
+check_ld -Wl,-Bsymbolic
+check_cc -Wl,-Bsymbolic
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	int main(void){ return 0; }
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -g -Wdeclaration-after-statement -Wall -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -Wcast-qual -Wwrite-strings -Wtype-limits -Wundef -Wmissing-prototypes -Wl,-Bsymbolic -c -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -Wl,-T,/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/arm-eabi/lib/ldscripts/armelf.x -Wl,-rpath-link=/home/uday/mount/android-ndk-r4b/build/platforms/android-8/arch-arm/usr/lib -L/home/uday/mount/android-ndk-r4b/build/platforms/android-8/arch-arm/usr/lib -nostdlib /home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/lib/gcc/arm-eabi/4.4.0/crtbegin.o /home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/lib/gcc/arm-eabi/4.4.0/crtend.o -lc -lm -ldl -Wl,--warn-common -Wl,--as-needed -Wl,-rpath-link,$(BUILD_ROOT)/libpostproc -Wl,-rpath-link,$(BUILD_ROOT)/libswscale -Wl,-rpath-link,$(BUILD_ROOT)/libavfilter -Wl,-rpath-link,$(BUILD_ROOT)/libavdevice -Wl,-rpath-link,$(BUILD_ROOT)/libavformat -Wl,-rpath-link,$(BUILD_ROOT)/libavcodec -Wl,-rpath-link,$(BUILD_ROOT)/libavutil -Wl,-Bsymbolic -o /tmp/ffconf.3FKKHVsK /tmp/ffconf.mFD3hqi5.o
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/../lib/gcc/arm-eabi/4.4.0/../../../../arm-eabi/bin/ld: warning: /tmp/ffconf.mFD3hqi5.o uses variable-size enums yet the output is to use 32-bit enums; use of enum values across objects may fail
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/../lib/gcc/arm-eabi/4.4.0/../../../../arm-eabi/bin/ld: warning: cannot find entry symbol _start; defaulting to 0000831c
+test_ldflags -Wl,--version-script,/tmp/ffconf.cvp7MwG8.ver
+check_ld -Wl,--version-script,/tmp/ffconf.cvp7MwG8.ver
+check_cc -Wl,--version-script,/tmp/ffconf.cvp7MwG8.ver
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	int main(void){ return 0; }
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -g -Wdeclaration-after-statement -Wall -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -Wcast-qual -Wwrite-strings -Wtype-limits -Wundef -Wmissing-prototypes -Wl,--version-script,/tmp/ffconf.cvp7MwG8.ver -c -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -Wl,-T,/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/arm-eabi/lib/ldscripts/armelf.x -Wl,-rpath-link=/home/uday/mount/android-ndk-r4b/build/platforms/android-8/arch-arm/usr/lib -L/home/uday/mount/android-ndk-r4b/build/platforms/android-8/arch-arm/usr/lib -nostdlib /home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/lib/gcc/arm-eabi/4.4.0/crtbegin.o /home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/lib/gcc/arm-eabi/4.4.0/crtend.o -lc -lm -ldl -Wl,--warn-common -Wl,--as-needed -Wl,-rpath-link,$(BUILD_ROOT)/libpostproc -Wl,-rpath-link,$(BUILD_ROOT)/libswscale -Wl,-rpath-link,$(BUILD_ROOT)/libavfilter -Wl,-rpath-link,$(BUILD_ROOT)/libavdevice -Wl,-rpath-link,$(BUILD_ROOT)/libavformat -Wl,-rpath-link,$(BUILD_ROOT)/libavcodec -Wl,-rpath-link,$(BUILD_ROOT)/libavutil -Wl,-Bsymbolic -Wl,--version-script,/tmp/ffconf.cvp7MwG8.ver -o /tmp/ffconf.3FKKHVsK /tmp/ffconf.mFD3hqi5.o
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/../lib/gcc/arm-eabi/4.4.0/../../../../arm-eabi/bin/ld: warning: /tmp/ffconf.mFD3hqi5.o uses variable-size enums yet the output is to use 32-bit enums; use of enum values across objects may fail
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/../lib/gcc/arm-eabi/4.4.0/../../../../arm-eabi/bin/ld: warning: cannot find entry symbol _start; defaulting to 00008398
+check_cc
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	void ff_foo(void) __asm__ ("av_foo@VERSION");
+    2	void ff_foo(void) { __asm__(""); }
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -g -Wdeclaration-after-statement -Wall -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -Wcast-qual -Wwrite-strings -Wtype-limits -Wundef -Wmissing-prototypes -c -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+/tmp/ccP667dl.s: Assembler messages:
+/tmp/ccP667dl.s:22: Error: unrecognized symbol type ""
+/tmp/ccP667dl.s:23: Error: bad instruction `av_foo'
+/tmp/ccP667dl.s:33: Error: expected comma after name `av_foo' in .size directive
+check_cc
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	__asm__(".symver ff_foo,av_foo@VERSION");
+    2	void ff_foo(void) {}
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -g -Wdeclaration-after-statement -Wall -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -Wcast-qual -Wwrite-strings -Wtype-limits -Wundef -Wmissing-prototypes -c -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+/tmp/ffconf.7gpjoHZK.c:2: warning: no previous prototype for 'ff_foo'
+check_cflags -fno-math-errno
+check_cc -fno-math-errno
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	int x;
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -g -Wdeclaration-after-statement -Wall -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -Wcast-qual -Wwrite-strings -Wtype-limits -Wundef -Wmissing-prototypes -O3 -fno-math-errno -c -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+check_cflags -fno-signed-zeros
+check_cc -fno-signed-zeros
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	int x;
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -g -Wdeclaration-after-statement -Wall -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -Wcast-qual -Wwrite-strings -Wtype-limits -Wundef -Wmissing-prototypes -O3 -fno-math-errno -fno-signed-zeros -c -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+check_cflags -fno-tree-vectorize
+check_cc -fno-tree-vectorize
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	int x;
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -g -Wdeclaration-after-statement -Wall -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -Wcast-qual -Wwrite-strings -Wtype-limits -Wundef -Wmissing-prototypes -O3 -fno-math-errno -fno-signed-zeros -fno-tree-vectorize -c -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+check_cflags -Werror=implicit
+check_cc -Werror=implicit
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	int x;
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -g -Wdeclaration-after-statement -Wall -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -Wcast-qual -Wwrite-strings -Wtype-limits -Wundef -Wmissing-prototypes -O3 -fno-math-errno -fno-signed-zeros -fno-tree-vectorize -Werror=implicit -c -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+check_cflags -Werror=missing-prototypes
+check_cc -Werror=missing-prototypes
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	int x;
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -std=c99 -fomit-frame-pointer -marm -g -Wdeclaration-after-statement -Wall -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -Wcast-qual -Wwrite-strings -Wtype-limits -Wundef -Wmissing-prototypes -O3 -fno-math-errno -fno-signed-zeros -fno-tree-vectorize -Werror=implicit -Werror=missing-prototypes -c -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
+check_asm asmalign_pot ".align 3"
+check_as
+BEGIN /tmp/ffconf.7gpjoHZK.c
+    1	void foo(void){ __asm__ volatile(".align 3"); }
+END /tmp/ffconf.7gpjoHZK.c
+/home/uday/mount/android-ndk-r4b/build/prebuilt/linux-x86/arm-eabi-4.4.0/bin/arm-eabi-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -fPIC -DANDROID -g -c -o /tmp/ffconf.mFD3hqi5.o /tmp/ffconf.7gpjoHZK.c
