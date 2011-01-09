@@ -1981,7 +1981,10 @@ static int av_transcode(AVFormatContext **output_files,
                 codec->channel_layout = icodec->channel_layout;
                 codec->sample_rate = icodec->sample_rate;
                 codec->channels = icodec->channels;
-                codec->frame_size = icodec->frame_size;
+                if(icodec->frame_size == 0 && icodec->codec_id == CODEC_ID_AMR_NB)
+					codec->frame_size = 160;
+                else
+                	codec->frame_size = icodec->frame_size;
                 codec->block_align= icodec->block_align;
                 if(codec->block_align == 1 && codec->codec_id == CODEC_ID_MP3)
                     codec->block_align= 0;

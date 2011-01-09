@@ -27,6 +27,7 @@ public class ViewVideo extends Activity {
 	private int start, stop;
 	private int duration;
 	protected int LOADING_DIALOG = 1;
+	
 	protected Handler completionHander = new Handler(){
 		@Override
 		public void handleMessage(Message msg) {
@@ -125,6 +126,7 @@ public class ViewVideo extends Activity {
 	@Override
 	protected void onDestroy() {
 		stopService(new Intent(this, VideoTrimmingService.class));
+		super.onDestroy();
 	}
 
 	@Override

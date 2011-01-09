@@ -48,7 +48,7 @@ JNIEXPORT jint JNICALL Java_net_video_trimmer_VideoTrimmer_trim(JNIEnv *env,
 		jint length) {
 	log_message("Starting to cut");
 
-	int numberOfArgs = 16;
+	int numberOfArgs = 12;
 	char** arguments = calloc(numberOfArgs, sizeof(char*));
 	char start[5], duration[5];
 	const char *in, *out;
@@ -68,12 +68,12 @@ JNIEXPORT jint JNICALL Java_net_video_trimmer_VideoTrimmer_trim(JNIEnv *env,
 	arguments[7] = "-vcodec";
 	arguments[8] = "copy";
 	arguments[9] = "-acodec";
-	arguments[10] = "aac";
-	arguments[11] = "-strict";
-	arguments[12] = "experimental";
-	arguments[13] = "-ab";
-	arguments[14] = "12k";
-	arguments[15] = out;
+	arguments[10] = "copy";
+//	arguments[11] = "-strict";
+//	arguments[12] = "experimental";
+//	arguments[13] = "-ab";
+//	arguments[14] = "12k";
+	arguments[11] = out;
 
 	int i;
 	for (i = 0; i < numberOfArgs; i++) {
