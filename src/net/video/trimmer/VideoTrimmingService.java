@@ -33,15 +33,31 @@ public class VideoTrimmingService extends IntentService {
 		String outFileName = extras.getString("outputFileName");
 		int start = extras.getInt("start");
 		int duration = extras.getInt("duration");
+		
 		Messenger messenger = (Messenger) extras.get("messenger");
 		Log.i("VideoTrimmerService", "Starting trimming");
-		VideoTrimmer.trim(inputFileName, outFileName, start, duration);
+		System.gc();
+		boolean error = false;
+		
+		try{
+			int returnStatus = VideoTrimmer.trim(inputFileName, outFileName, start, duration);
+			error = returnStatus != 0;
+		} catch (Exception e) {
+			error = true;
+		}
+		System.gc();
+		
+		String messageText = error ?"Unable to trim the video. Check the error logs.": "Trimmed video succesfully to "+outFileName;
+		Log.i("VideoTrimmerService", "Sending message: "+messageText);
+		
+
 		try {
-			Log.i("VideoTrimmerService", "Sending message");
-			messenger.send(new Message());
+			
+			Message message = new Message();
+			message.getData().putString("text", messageText);
+			messenger.send(message);
 		} catch (RemoteException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			Log.i("VideoTrimmerService", "Exception while sending message");
 		}
 	}
 

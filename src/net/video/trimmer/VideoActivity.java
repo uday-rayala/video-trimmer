@@ -25,9 +25,10 @@ public class VideoActivity extends Activity {
 				MediaStore.Video.Media.DATA,
 				MediaStore.Video.Media.DISPLAY_NAME,
 				MediaStore.Video.Media.SIZE, 
+				MediaStore.Video.Media.DURATION,
 		};
 		
-		videocursor = managedQuery(MediaStore.Video.Media.EXTERNAL_CONTENT_URI, parameters, null, null, null);
+		videocursor = managedQuery(MediaStore.Video.Media.EXTERNAL_CONTENT_URI, parameters, null, null, MediaStore.Video.Media.DATE_TAKEN +" DESC");
 		videolist = (ListView) findViewById(R.id.PhoneVideoList);
 		videolist.setAdapter(new VideoAdapter(this.videocursor, getApplicationContext()));
 		videolist.setOnItemClickListener(videogridlistener);

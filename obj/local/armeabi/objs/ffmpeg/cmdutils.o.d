@@ -64,6 +64,7 @@
  /home/uday/mount/android-ndk-r4b/build/platforms/android-8/arch-arm/usr/include/asm/termios.h \
  /home/uday/mount/android-ndk-r4b/build/platforms/android-8/arch-arm/usr/include/time.h \
  /home/uday/mount/android-ndk-r4b/build/platforms/android-8/arch-arm/usr/include/assert.h \
+ /home/uday/mount/android-ndk-r4b/build/platforms/android-8/arch-arm/usr/include/android/log.h \
  /home/uday/Tools/video-trimmer/jni/ffmpeg/config.h \
  /home/uday/Tools/video-trimmer/jni/ffmpeg/libavformat/avformat.h \
  /home/uday/mount/android-ndk-r4b/build/platforms/android-8/arch-arm/usr/include/stdio.h \
@@ -220,6 +221,8 @@
 /home/uday/mount/android-ndk-r4b/build/platforms/android-8/arch-arm/usr/include/time.h:
 
 /home/uday/mount/android-ndk-r4b/build/platforms/android-8/arch-arm/usr/include/assert.h:
+
+/home/uday/mount/android-ndk-r4b/build/platforms/android-8/arch-arm/usr/include/android/log.h:
 
 /home/uday/Tools/video-trimmer/jni/ffmpeg/config.h:
 

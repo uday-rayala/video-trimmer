@@ -23,6 +23,7 @@
 #include <stdlib.h>
 #include <errno.h>
 #include <math.h>
+#include <android/log.h>
 
 /* Include only the enabled headers since some compilers (namely, Sun
    Studio) will not omit unused inline functions and create undefined
@@ -42,6 +43,8 @@
 #if HAVE_SYS_RESOURCE_H
 #include <sys/resource.h>
 #endif
+
+#define  ERROR(...)  __android_log_print(ANDROID_LOG_ERROR, "TakePics", __VA_ARGS__)
 
 const char **opt_names;
 static int opt_name_count;
@@ -64,7 +67,7 @@ double parse_number_or_die(const char *context, const char *numstr, int type, do
         error= "Expected int64 for %s but found %s\n";
     else
         return d;
-    fprintf(stderr, error, context, numstr, min, max);
+    ERROR(error, context, numstr, min, max);
     exit(1);
 }
 
@@ -72,7 +75,7 @@ int64_t parse_time_or_die(const char *context, const char *timestr, int is_durat
 {
     int64_t us = parse_date(timestr, is_duration);
     if (us == INT64_MIN) {
-        fprintf(stderr, "Invalid %s specification for %s: %s\n",
+        ERROR("Invalid %s specification for %s: %s\n",
                 is_duration ? "duration" : "date", context, timestr);
         exit(1);
     }
@@ -142,14 +145,14 @@ void parse_options(int argc, char **argv, const OptionDef *options,
                 po= find_option(options, "default");
             if (!po->name) {
 unknown_opt:
-                fprintf(stderr, "%s: unrecognized option '%s'\n", argv[0], opt);
+                ERROR("%s: unrecognized option '%s'\n", argv[0], opt);
                 exit(1);
             }
             arg = NULL;
             if (po->flags & HAS_ARG) {
                 arg = argv[optindex++];
                 if (!arg) {
-                    fprintf(stderr, "%s: missing argument for option '%s'\n", argv[0], opt);
+                    ERROR("%s: missing argument for option '%s'\n", argv[0], opt);
                     exit(1);
                 }
             }
@@ -167,7 +170,7 @@ unknown_opt:
                 *po->u.float_arg = parse_number_or_die(opt, arg, OPT_FLOAT, -1.0/0.0, 1.0/0.0);
             } else if (po->flags & OPT_FUNC2) {
                 if (po->u.func2_arg(opt, arg) < 0) {
-                    fprintf(stderr, "%s: failed to set value '%s' for option '%s'\n", argv[0], arg, opt);
+                    ERROR("%s: failed to set value '%s' for option '%s'\n", argv[0], arg, opt);
                     exit(1);
                 }
             } else {
@@ -206,11 +209,11 @@ int opt_default(const char *opt, const char *arg){
             ret = av_set_string3(avcodec_opts[AVMEDIA_TYPE_SUBTITLE], opt+1, arg, 1, &o);
     }
     if (o && ret < 0) {
-        fprintf(stderr, "Invalid value '%s' for option '%s'\n", arg, opt);
+        ERROR("Invalid value '%s' for option '%s'\n", arg, opt);
         exit(1);
     }
     if (!o) {
-        fprintf(stderr, "Unrecognized option '%s'\n", opt);
+        ERROR("Unrecognized option '%s'\n", opt);
         exit(1);
     }
 
@@ -250,10 +253,10 @@ int opt_loglevel(const char *opt, const char *arg)
 
     level = strtol(arg, &tail, 10);
     if (*tail) {
-        fprintf(stderr, "Invalid loglevel \"%s\". "
+        ERROR("Invalid loglevel \"%s\". "
                         "Possible levels are numbers or:\n", arg);
         for (i = 0; i < FF_ARRAY_ELEMS(log_levels); i++)
-            fprintf(stderr, "\"%s\"\n", log_levels[i].name);
+            ERROR("\"%s\"\n", log_levels[i].name);
         exit(1);
     }
     av_log_set_level(level);
@@ -268,7 +271,7 @@ int opt_timelimit(const char *opt, const char *arg)
     if (setrlimit(RLIMIT_CPU, &rl))
         perror("setrlimit");
 #else
-    fprintf(stderr, "Warning: -%s not implemented on this OS\n", opt);
+    ERROR("Warning: -%s not implemented on this OS\n", opt);
 #endif
     return 0;
 }
@@ -293,7 +296,7 @@ void print_error(const char *filename, int err)
 
     if (av_strerror(err, errbuf, sizeof(errbuf)) < 0)
         errbuf_ptr = strerror(AVUNERROR(err));
-    fprintf(stderr, "%s: %s\n", filename, errbuf_ptr);
+    ERROR("%s: %s\n", filename, errbuf_ptr);
 }
 
 #define PRINT_LIB_VERSION(outstream,libname,LIBNAME,indent)             \
@@ -321,10 +324,10 @@ static void maybe_print_config(const char *lib, const char *cfg)
 
     if (strcmp(FFMPEG_CONFIGURATION, cfg)) {
         if (!warned_cfg) {
-            fprintf(stderr, "  WARNING: library configuration mismatch\n");
+            ERROR("  WARNING: library configuration mismatch\n");
             warned_cfg = 1;
         }
-        fprintf(stderr, "  %-11s configuration: %s\n", lib, cfg);
+        ERROR("  %-11s configuration: %s\n", lib, cfg);
     }
 }
 
@@ -336,11 +339,9 @@ static void maybe_print_config(const char *lib, const char *cfg)
 
 void show_banner(void)
 {
-    fprintf(stderr, "%s version " FFMPEG_VERSION ", Copyright (c) %d-%d the FFmpeg developers\n",
-            program_name, program_birth_year, this_year);
-    fprintf(stderr, "  built on %s %s with %s %s\n",
-            __DATE__, __TIME__, CC_TYPE, CC_VERSION);
-    fprintf(stderr, "  configuration: " FFMPEG_CONFIGURATION "\n");
+    ERROR("%s version " FFMPEG_VERSION ", Copyright (c) %d-%d the FFmpeg developers\n", program_name, program_birth_year, this_year);
+    ERROR("  built on %s %s with %s %s\n", __DATE__, __TIME__, CC_TYPE, CC_VERSION);
+    ERROR("  configuration: " FFMPEG_CONFIGURATION "\n");
     PRINT_LIB_CONFIG(AVUTIL,   "libavutil",   avutil_configuration());
     PRINT_LIB_CONFIG(AVCODEC,  "libavcodec",  avcodec_configuration());
     PRINT_LIB_CONFIG(AVFORMAT, "libavformat", avformat_configuration());
@@ -625,7 +626,7 @@ int read_file(const char *filename, char **bufptr, size_t *size)
     FILE *f = fopen(filename, "rb");
 
     if (!f) {
-        fprintf(stderr, "Cannot read file '%s': %s\n", filename, strerror(errno));
+        ERROR("Cannot read file '%s': %s\n", filename, strerror(errno));
         return AVERROR(errno);
     }
     fseek(f, 0, SEEK_END);
@@ -633,7 +634,7 @@ int read_file(const char *filename, char **bufptr, size_t *size)
     fseek(f, 0, SEEK_SET);
     *bufptr = av_malloc(*size + 1);
     if (!*bufptr) {
-        fprintf(stderr, "Could not allocate file buffer\n");
+        ERROR("Could not allocate file buffer\n");
         fclose(f);
         return AVERROR(ENOMEM);
     }
