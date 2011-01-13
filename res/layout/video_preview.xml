@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	    <ImageView android:id="@+id/image_preview" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+	    
+	    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingLeft="10dp">
+	    	<TextView android:id="@+id/file_name" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+	    	<TextView android:id="@+id/duration" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+	    	<TextView android:id="@+id/added_date" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+</LinearLayout>
