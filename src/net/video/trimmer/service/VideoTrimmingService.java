@@ -1,16 +1,16 @@
-package net.video.trimmer;
+package net.video.trimmer.service;
 
+import net.video.trimmer.natives.VideoTrimmer;
 import android.app.IntentService;
-import android.app.Service;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.IBinder;
 import android.os.Message;
 import android.os.Messenger;
 import android.os.RemoteException;
 import android.util.Log;
 
 public class VideoTrimmingService extends IntentService {
+	public static boolean isTrimming = false;
 
 	public VideoTrimmingService() {
 		super("VideoTrimmingService");
@@ -27,6 +27,7 @@ public class VideoTrimmingService extends IntentService {
 
 	@Override
 	protected void onHandleIntent(Intent intent) {
+		isTrimming = true;
 		Log.i("VideoTrimmerService", "On bind of service");
 		Bundle extras = intent.getExtras();
 		String inputFileName = extras.getString("inputFileName");
@@ -59,6 +60,7 @@ public class VideoTrimmingService extends IntentService {
 		} catch (RemoteException e) {
 			Log.i("VideoTrimmerService", "Exception while sending message");
 		}
+		isTrimming = false;
 	}
 
 }

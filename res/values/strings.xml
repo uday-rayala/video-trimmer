@@ -2,4 +2,5 @@
 <resources>
     <string name="hello">Hello World, VideoTrimmerUI!</string>
     <string name="app_name">VideoTrimmer</string>
+
 </resources>

@@ -1,7 +1,7 @@
 /home/uday/Tools/video-trimmer/obj/local/armeabi/objs/video-trimmer/video-trimmer.o: \
  /home/uday/Tools/video-trimmer/jni/video-trimmer.c \
  /home/uday/mount/android-ndk-r4b/build/platforms/android-8/arch-arm/usr/include/jni.h \
- /home/uday/Tools/video-trimmer/jni/include/net_video_trimmer_VideoTrimmer.h \
+ /home/uday/Tools/video-trimmer/jni/include/net_video_trimmer_natives_VideoTrimmer.h \
  /home/uday/Tools/video-trimmer/jni/ffmpeg/libswscale/swscale.h \
  /home/uday/Tools/video-trimmer/jni/ffmpeg/libavutil/avutil.h \
  /home/uday/Tools/video-trimmer/jni/ffmpeg/libavutil/common.h \
@@ -63,7 +63,7 @@
 
 /home/uday/mount/android-ndk-r4b/build/platforms/android-8/arch-arm/usr/include/jni.h:
 
-/home/uday/Tools/video-trimmer/jni/include/net_video_trimmer_VideoTrimmer.h:
+/home/uday/Tools/video-trimmer/jni/include/net_video_trimmer_natives_VideoTrimmer.h:
 
 /home/uday/Tools/video-trimmer/jni/ffmpeg/libswscale/swscale.h:
 

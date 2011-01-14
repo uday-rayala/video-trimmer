@@ -1,5 +1,6 @@
-package net.video.trimmer;
+package net.video.trimmer.view;
 
+import net.video.trimmer.R;
 import android.app.Activity;
 import android.content.Intent;
 import android.database.Cursor;
@@ -10,7 +11,6 @@ import android.view.Window;
 import android.widget.AdapterView;
 import android.widget.ListAdapter;
 import android.widget.ListView;
-import android.widget.SimpleCursorAdapter;
 import android.widget.AdapterView.OnItemClickListener;
 
 public class VideoActivity extends Activity {

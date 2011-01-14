@@ -1,8 +1,11 @@
 /**
  * 
  */
-package net.video.trimmer;
+package net.video.trimmer.view;
 
+
+import net.video.trimmer.R;
+import net.video.trimmer.util.TimeUtils;
 import android.content.Context;
 import android.database.Cursor;
 import android.graphics.Bitmap;
@@ -34,7 +37,7 @@ public final class VideoCursorAdapter extends ResourceCursorAdapter {
 		fileNameView.setText(fileName);
 		
 		TextView durationView = (TextView) view.findViewById(R.id.duration);
-		durationView.setText(getString(cursor, MediaStore.Video.Media.DURATION));
+		durationView.setText(getTime(cursor, MediaStore.Video.Media.DURATION));
 		
 		TextView addedOnView = (TextView) view.findViewById(R.id.added_date);
 		addedOnView.setText(getString(cursor, MediaStore.Video.Media.DATE_ADDED));
@@ -48,5 +51,10 @@ public final class VideoCursorAdapter extends ResourceCursorAdapter {
 	private String getString(Cursor cursor, String columnName) {
 		int index = cursor.getColumnIndexOrThrow(columnName);
 		return cursor.getString(index);
+	}
+	
+	private String getTime(Cursor cursor, String columnName) {
+		int time = getInt(cursor, columnName);
+		return TimeUtils.toFormattedTime(time);
 	}
 }

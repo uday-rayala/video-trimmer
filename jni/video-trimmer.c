@@ -1,5 +1,5 @@
 #include <jni.h>
-#include "include/net_video_trimmer_VideoTrimmer.h"
+#include "include/net_video_trimmer_natives_VideoTrimmer.h"
 #include "libswscale/swscale.h"
 #include "libavcodec/avcodec.h"
 #include "libavformat/avformat.h"
@@ -43,7 +43,7 @@ void itoa(int n, char s[])
 
 
 
-JNIEXPORT jint JNICALL Java_net_video_trimmer_VideoTrimmer_trim(JNIEnv *env,
+JNIEXPORT jint JNICALL Java_net_video_trimmer_natives_VideoTrimmer_trim(JNIEnv *env,
 		jclass someclass, jstring inputFile, jstring outFile, jint startTime,
 		jint length) {
 	log_message("Starting to cut");

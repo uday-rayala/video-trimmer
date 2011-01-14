@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<merge  xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<VideoView android:id="@+id/VideoView" android:scaleType="center" android:layout_width="fill_parent" android:layout_height="fill_parent"/>
+	<LinearLayout android:id="@+id/LinearLayout01" android:layout_marginTop="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_horizontal|top">
+		<Button android:layout_height="wrap_content" android:id="@+id/Start" android:text="Start" android:layout_width="wrap_content"/>
+		<Button android:layout_height="wrap_content" android:id="@+id/Stop" android:text="Stop" android:layout_width="wrap_content"/>
+		<Button android:layout_height="wrap_content" android:id="@+id/Reset" android:text="Reset" android:layout_width="wrap_content"/>
+		<Button android:layout_height="wrap_content" android:id="@+id/Trim" android:text="Trim" android:layout_width="wrap_content"/>
+		<TextView android:background="#0000ff" android:layout_height="wrap_content" android:id="@+id/Details" android:layout_marginLeft="5dp" android:padding="5dp"
+			android:textColor="#ff0000" android:layout_width="wrap_content" android:layout_gravity="center_vertical"/>
+	</LinearLayout>
+</merge>
+
