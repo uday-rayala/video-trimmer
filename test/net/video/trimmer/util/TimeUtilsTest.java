@@ -1,6 +1,7 @@
 package net.video.trimmer.util;
 
 import junit.framework.Assert;
+import net.video.trimmer.util.TimeUtils.MilliSeconds;
 
 import org.junit.Test;
 
@@ -15,14 +16,14 @@ public class TimeUtilsTest {
 	}
 
 	private int seconds(int num) {
-		return num * 1000;
+		return num * MilliSeconds.ONE_SECOND;
 	}
 
 	private int minutes(int num) {
-		return num * 60 * 1000;
+		return num * MilliSeconds.ONE_MINUTE;
 	}
 
 	private int hours(int num) {
-		return num * 60 * 60 * 1000;
+		return num * MilliSeconds.ONE_HOUR;
 	}
 }
