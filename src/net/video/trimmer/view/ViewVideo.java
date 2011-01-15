@@ -3,6 +3,7 @@ package net.video.trimmer.view;
 import net.video.trimmer.R;
 import net.video.trimmer.model.VideoPlayerState;
 import net.video.trimmer.service.VideoTrimmingService;
+import net.video.trimmer.util.FileUtils;
 import net.video.trimmer.util.TimeUtils;
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -10,7 +11,6 @@ import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.DialogInterface.OnCancelListener;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.os.Handler;
@@ -121,8 +121,9 @@ public class ViewVideo extends Activity {
 				}
 				Intent intent = videoTrimmingServiceIntent();
 
-				intent.putExtra("inputFileName", videoPlayerState.getFilename());
-				intent.putExtra("outputFileName", "/sdcard/trimmed.3gp");
+				String inputFileName = videoPlayerState.getFilename();
+				intent.putExtra("inputFileName", inputFileName);
+				intent.putExtra("outputFileName", FileUtils.getTargetFileName(inputFileName));
 				intent.putExtra("start", videoPlayerState.getStart()/1000);
 				intent.putExtra("duration", videoPlayerState.getDuration()/1000);
 
