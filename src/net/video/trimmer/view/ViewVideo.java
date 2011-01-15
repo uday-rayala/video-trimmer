@@ -27,6 +27,7 @@ import android.widget.VideoView;
 public class ViewVideo extends Activity {
 	protected final int LOADING_DIALOG = 1;
 	protected final int MESSAGE_DIALOG = 2;
+	protected final int VALIDATION_DIALOG = 3;
 
 	private VideoView videoView;
 	private TextView detailView;
@@ -41,6 +42,7 @@ public class ViewVideo extends Activity {
 			videoPlayerState.setMessageText(msg.getData().getString("text"));
 			removeDialog(LOADING_DIALOG);
 			showDialog(MESSAGE_DIALOG);
+			stopService(videoTrimmingServiceIntent());
 		}
 	};
 
@@ -112,7 +114,12 @@ public class ViewVideo extends Activity {
 			@Override
 			public void onClick(View arg0) {
 				videoView.pause();
-				Intent intent = new Intent(ViewVideo.this, VideoTrimmingService.class);
+				
+				if(!videoPlayerState.isValid()) {
+					showDialog(VALIDATION_DIALOG);
+					return;
+				}
+				Intent intent = videoTrimmingServiceIntent();
 
 				intent.putExtra("inputFileName", videoPlayerState.getFilename());
 				intent.putExtra("outputFileName", "/sdcard/trimmed.3gp");
@@ -124,10 +131,13 @@ public class ViewVideo extends Activity {
 				startService(intent);
 				showDialog(LOADING_DIALOG);
 			}
-
 		};
 	}
 
+	private Intent videoTrimmingServiceIntent() {
+		return new Intent(ViewVideo.this, VideoTrimmingService.class);
+	}
+	
 	private OnClickListener resetClickListener() {
 		return new OnClickListener() {
 			@Override
@@ -185,25 +195,35 @@ public class ViewVideo extends Activity {
 		Dialog dialog;
 
 		switch (id) {
+		case VALIDATION_DIALOG:
+			dialog = simpleAlertDialog("Invalid video timings selected for trimming. Please make sure your start time is less than the stop time."); 
+			break;
 		case LOADING_DIALOG:
 			dialog = ProgressDialog.show(ViewVideo.this, "", "Trimming...",	true, true);
 			break;
 		case MESSAGE_DIALOG:
-			AlertDialog.Builder builder = new AlertDialog.Builder(this);
-			builder.setMessage("Hello...I am msg").setCancelable(true)
-					.setPositiveButton("Ok",
-							new DialogInterface.OnClickListener() {
-								public void onClick(DialogInterface dialog, int id) {
-									ViewVideo.this.removeDialog(MESSAGE_DIALOG);
-									ViewVideo.this.removeDialog(LOADING_DIALOG);
-								}
-							});
-			dialog = builder.create();
+			dialog = simpleAlertDialog("");
 			break;
 		default:
 			dialog = null;
 		}
 
+		return dialog;
+	}
+
+
+	private Dialog simpleAlertDialog(String message) {
+		Dialog dialog;
+		AlertDialog.Builder builder = new AlertDialog.Builder(this);
+		builder.setMessage(message).setCancelable(true)
+				.setPositiveButton("Ok",
+						new DialogInterface.OnClickListener() {
+							public void onClick(DialogInterface dialog, int id) {
+								ViewVideo.this.removeDialog(MESSAGE_DIALOG);
+								ViewVideo.this.removeDialog(LOADING_DIALOG);
+							}
+						});
+		dialog = builder.create();
 		return dialog;
 	}
 

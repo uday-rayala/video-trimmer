@@ -45,5 +45,7 @@ public class VideoPlayerState {
 		this.currentTime = currentTime;
 	}
 
-	
+	public boolean isValid() {
+		return stop > start;
+	}
 }
