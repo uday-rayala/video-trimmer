@@ -32,8 +32,6 @@ public class ViewVideo extends Activity {
 	private VideoView videoView;
 	private TextView detailView;
 	private VideoPlayerState videoPlayerState = new VideoPlayerState();
-	private ProgressDialog dialog;
-
 	
 	protected Handler completionHander = new Handler() {
 		@Override
@@ -181,13 +179,6 @@ public class ViewVideo extends Activity {
 			break;
 		}
 	}
-
-	@Override
-	public void onConfigurationChanged(Configuration newConfig) {
-		// TODO Auto-generated method stub
-		super.onConfigurationChanged(newConfig);
-	}
-
 
 	@Override
 	protected Dialog onCreateDialog(int id) {
