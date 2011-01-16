@@ -11,6 +11,7 @@ import android.util.Log;
 
 public class VideoTrimmingService extends IntentService {
 	public static boolean isTrimming = false;
+	private VideoTrimmer trimmer;
 
 	public VideoTrimmingService() {
 		super("VideoTrimmingService");
@@ -41,7 +42,7 @@ public class VideoTrimmingService extends IntentService {
 		boolean error = false;
 		
 		try{
-			int returnStatus = VideoTrimmer.trim(inputFileName, outFileName, start, duration);
+			int returnStatus = trimmer.trim_(inputFileName, outFileName, start, duration);
 			error = returnStatus != 0;
 		} catch (Exception e) {
 			error = true;
@@ -62,5 +63,10 @@ public class VideoTrimmingService extends IntentService {
 		}
 		isTrimming = false;
 	}
-
+	
+	
+	void setVideoTrimmer(VideoTrimmer t){
+		this.trimmer = t;
+		
+	}
 }
