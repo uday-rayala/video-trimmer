@@ -15,6 +15,7 @@ public class VideoTrimmingService extends IntentService {
 
 	public VideoTrimmingService() {
 		super("VideoTrimmingService");
+		setVideoTrimmer(new VideoTrimmer());
 	}
 
 	
